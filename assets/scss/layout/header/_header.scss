@@ -1,0 +1,114 @@
+@use '../../utils' as *;
+
+.mh-header {
+    &-transparent {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    &-container {
+        max-width: 1424px;
+        padding: 0 12px;
+        margin: auto;
+    }
+    &-bg {
+        border-radius: 15px;
+        padding-right: 5px;
+    }
+    &-row {
+        display: flex;
+    }
+    &-logo {
+        position: relative;
+        z-index: 2;
+        &-box {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+        }
+        &-shape {
+            position: relative;
+            & svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
+        }
+    }
+    &-content {
+        width: 100%;
+    }
+    &-menu {
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-right: 40px;
+                position: relative;
+                a {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: var(--mh-primary-color-2);
+                    display: inline-block;
+                    line-height: 1;
+                    padding: 27px 0;
+                }
+                &:hover {
+                    & > a {
+                        color: var(--mh-theme-color);
+                    }
+                    & > .sub-menu {
+                        top: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                & .sub-menu {
+                    position: absolute;
+                    background-color: var(--mh-white-color);
+                    width: 200px;
+                    padding: 15px 0 18px;
+                    left: 0;
+                    top: 105%;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include mh-transition();
+                    & li {
+                        display: block;
+                        margin-right: 0;
+                        & a {
+                            padding: 10px 30px;
+                            display: block;
+                        }
+                        & .sub-menu {
+                            left: 102%;
+                            top: 0;
+                        }
+                        &:hover {
+                            & > .sub-menu {
+                                left: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-phone {
+        & a {
+            color: var(--mh-primary-color-2);
+            font-size: 15px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            & svg {
+                margin-right: 8px;
+            }
+        }
+    }
+}

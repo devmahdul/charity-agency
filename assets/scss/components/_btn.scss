@@ -1,0 +1,12 @@
+@use '../utils/' as *;
+
+.mh-btn {
+	background-color: var(--mh-theme-color);
+	display: inline-block;
+	line-height: 1;
+	padding: 22px 34px;
+    color: var(--mh-primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+}

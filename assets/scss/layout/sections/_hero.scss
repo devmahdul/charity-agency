@@ -1,1 +1,49 @@
 @use '../../utils' as *;
+
+.mh-hero {
+    &-area {
+        padding: 280px 0 358px;
+    }
+    &-sub-title {
+        color: var(--mh-theme-color);
+        font-family: var(--mh-sub-heading-font);
+        font-size: 50px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+    &-title {
+        font-size: 120px;
+        color: var(--mh-white-color);
+        letter-spacing: -0.03em;
+        margin-top: 10px;
+    }
+    &-video {
+        margin-right: -7px;
+        & a {
+            width: 90px;
+            height: 90px;
+            background-color: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid var(--mh-white-color);
+            box-shadow: 0 0 30px 0 rgba(17, 17, 45, 0.1);
+            backdrop-filter: blur(5px);
+            line-height: 104px;
+            text-align: center;
+        }
+    }
+    &-shape {
+        &-01 {
+            left: 161px;
+            top: 34%;
+        }
+        &-02 {
+            bottom: 22%;
+            left: 116px;
+        }
+        &-03 {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

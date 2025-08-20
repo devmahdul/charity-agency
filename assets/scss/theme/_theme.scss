@@ -71,10 +71,10 @@ h5,
 h6 {
 	font-family: var(--mh-heading-font);
 	color: var(--mh-heading-color);
-	margin-top: 0px;
+	margin: 0px;
 	font-weight: 700;
 	line-height: 1;
-	letter-spacing: -2px;
+	letter-spacing: -0.04em;
 }
 
 h1 {
@@ -112,7 +112,8 @@ p {
 	font-weight: 400;
 	color: var(--mh-body-color);
 	margin-bottom: 15px;
-	line-height: 28px;
+	line-height: 26px;
+	letter-spacing: -0.02em;
 }
 
 

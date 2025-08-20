@@ -1,0 +1,19 @@
+@use '../../utils/' as *;
+
+.mhservice {
+    padding:48px 15px 44px;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 4px solid #f55;
+    @include mh-transition();
+    &-margin {
+        margin-top: -150px;
+    }
+    &__title {
+        font-size: 24px;
+        letter-spacing: -0.02em;
+    }
+    &:hover {
+        box-shadow: 0 20px 60px 0 rgba(41, 28, 3, 0.1);
+        transform: translateY(-10px);
+    }
+}

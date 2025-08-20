@@ -23,22 +23,22 @@
 // padding
 
 @for $i from 1 through 32 {
-    pt-#{ 5 * $i } {
+    .pt-#{ 5 * $i } {
         padding-top: 5px * $i ;
     }
 }
 @for $i from 1 through 30 {
-    pb-#{ 5 * $i } {
+    .pb-#{ 5 * $i } {
         padding-bottom: 5px * $i ;
     }
 }
 @for $i from 1 through 30 {
-    pl-#{ 5 * $i } {
+    .pl-#{ 5 * $i } {
         padding-left: 5px * $i ;
     }
 }
 @for $i from 1 through 30 {
-    pr-#{ 5 * $i } {
+    .pr-#{ 5 * $i } {
         padding-right: 5px * $i ;
     }
 }

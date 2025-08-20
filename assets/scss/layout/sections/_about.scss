@@ -1,0 +1,47 @@
+@use '../../utils' as *;
+
+.mh-about {
+    &-img {
+        &-shape {
+            &-01 {
+                top: 0;
+                left: 0;
+            }
+            &-02 {
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    &-vr-title {
+        font-size: 130px;
+        color: #E0DEDA;
+        font-weight: 600;
+        top: 110px;
+        right: -182px;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+    &-number{
+        bottom: 85px;
+        right: -120px;
+        &-info {
+            position: absolute;
+            text-align: right;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            & h2 {
+                font-size: 90px;
+                color: #F8F3E7;
+                margin-bottom: 5px;
+            }
+            & h6 {
+                font-size: 15px;
+                font-weight: 600;
+                color: #F8F3E7; 
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,8 @@
+
+$font-sizes: 14px, 15px;
+
+@each $font-size in $font-sizes {
+    .fns-#{$font-size} {
+        font-size: $font-size;
+    }
+}

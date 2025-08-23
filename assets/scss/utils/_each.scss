@@ -5,3 +5,15 @@ $weights: 300, 400, 500, 600, 700;
         font-weight: $weight;
     }
 }
+
+$border-radius: (
+    12: 12px,
+    16: 16px,
+    20: 20px,
+);
+
+@each $name, $value in $border-radius {
+    .br-#{$name} {
+        border-radius: $value;
+    }
+}

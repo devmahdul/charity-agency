@@ -1,0 +1,27 @@
+@use '../../utils' as *;
+
+.mh-text-slider {
+    &-title {
+        font-size: 80px;
+        font-weight: 300;
+        & img {
+            margin-right: 40px;
+        }
+    }
+}
+
+.tp-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.mh-text-slider-active{
+    & .swiper-slide{
+        width: auto;
+        display: inline-block;
+    }
+}
+.mh-text-bg {
+    &-1 {
+        padding: 50px 0;
+    }
+}

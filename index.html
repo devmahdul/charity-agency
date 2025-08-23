@@ -6,6 +6,7 @@
     <title>charity agency</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -88,14 +89,14 @@
                         <span class="mh-hero-sub-title">Stop world hunger</span>
                         <h1 class="mh-hero-title">Every child deserves to Eat.</h1>
                         <div class="mh-hero-btn mt-45">
-                            <a class="mh-btn" href="#">Donate Now</a>
+                            <a class="mh-btn" href="#" data-color="#121018">Donate Now</a>
                             <a class="mh-btn mh-btn-white ml-10" href="#">Grt Involved</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 d-flex align-items-center justify-content-end">
                     <div class="mh-hero-video">
-                        <a class="popup-video" href="https://www.youtube.com/watch?v=bzsWmfFCqQk">
+                        <a class="popup-video" href="https://www.youtube.com/watch?v=XHztVXIzuEQ">
                             <svg width="57" height="58" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.5263 11.2321C20.5263 10.4622 21.3596 9.98113 22.0263 10.366L35.5263 18.1603C36.1929 18.5452 36.1929 19.5074 35.5263 19.8923L22.0263 27.6865C21.3596 28.0714 20.5263 27.5903 20.5263 26.8205L20.5263 11.2321Z" fill="white" />
                             </svg>
@@ -108,7 +109,7 @@
     <!-- Hero Sction End -->
 
     <!-- Services Area Start -->
-    <section class="mh-service-area mhservice-margin mh-gray-bg pb-105">
+    <section class="mh-service-area mhservice-margin mh-off-white-bg pb-110">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3">
@@ -169,7 +170,11 @@
     <!-- Services Area End -->
 
     <!-- About Area Start -->
-    <section class="mh-about-area mh-gray-bg pb-100">
+    <section class="mh-about-area p-relative z-index-2 mh-off-white-bg fix pb-100">
+        <div class="mh-about-shape">
+            <img class="mh-about-shape-01 p-absolute" src="assets/img/shape/about-hand-shape.png" alt="">
+            <img class="mh-about-shape-02 p-absolute" src="assets/img/shape/about-wood-shape.png" alt="">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-5">
@@ -177,8 +182,8 @@
                         <h3 class="mh-about-vr-title p-absolute">about</h3>
                         <img src="assets/img/about/about-img.jpg" alt="">
                         <div class="mh-about-img-shape">
-                            <img class="mh-about-img-shape-01 p-absolute" src="assets/img/about/about-img-shape-01.png" alt="">
-                            <img class="mh-about-img-shape-02 p-absolute" src="assets/img/about/about-img-shape-02.png" alt="">
+                            <img class="mh-about-img-shape-01 p-absolute" src="assets/img/shape/about-img-shape-top.png" alt="">
+                            <img class="mh-about-img-shape-02 p-absolute" src="assets/img/shape/about-img-shape-bottom.png" alt="">
                         </div>
                         <div class="mh-about-number p-absolute">
                             <img src="assets/img/about/about-number.png" alt="">
@@ -192,15 +197,45 @@
                 </div>
                 <div class="col-xl-5 offset-2">
                     <div class=".mh-about-wrapper">
-                        <div class="mh-section-info">
-                            <span class="mh-section-sub-title">You can help</span>
-                            <h2 class="mh-section-title">Help us end
+                        <div class="mh-section-info mb-40">
+                            <span class="mh-section-sub-title mh-sf mb-20">You can help</span>
+                            <h2 class="mh-section-title mb-20">Help us end
                                 Poverty for good.
                                 Start with a child.
                             </h2>
                             <p>Growing up in poverty, children face tough challenges:
                             hunger and malnutrition, limited access to education and
                             medical services, social discrimination and isolation. </p>
+                        </div>
+                        <div class="mh-about-btn">
+                            <a class="mh-btn mh-btn-primary" href="#">More About</a>
+                        </div>
+                    </div>
+                    <div class="mh-about-fact p-relative mt-60">
+                        <img class="mh-about-fact-shape p-absolute" src="assets/img/shape/about-multihand-shape.png" alt="">
+                        <div class="row">
+                            <div class="col-xl-6 gx-2">
+                                <div class="mh-about-fact-box br-12 mh-white-bg d-flex">
+                                    <div class="mh-about-fact-img">
+                                        <img src="assets/img/about/hand-love.png" alt="">
+                                    </div>
+                                    <div class="mh-about-fact-info mb-10">
+                                        <h4>10,000+</h4>
+                                        <p>Volunteers Engaged</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 gx-2">
+                                <div class="mh-about-fact-box br-12 mh-white-bg d-flex">
+                                    <div class="mh-about-fact-img">
+                                        <img src="assets/img/about/hand-love.png" alt="">
+                                    </div>
+                                    <div class="mh-about-fact-info mb-10">
+                                        <h4>$1 M+</h4>
+                                        <p>Total Funds Raised</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,8 +244,391 @@
     </section>
     <!-- About Area End -->
 
+    <!-- Causes Area Start -->
+    <section class="mh-causes-area mh-off-white-bg fix pt-110">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-xl-5">
+                    <div class="mh-section-info p-relative z-index-2 mb-50">
+                        <h3 class="mh-section-back-title p-absolute z-index-n1">care</h3>
+                        <span class="mh-section-sub-title mh-sf mb-20">Popular Causes</span>
+                        <h2 class="mh-section-title mb-20">
+                            Creating
+                            Apositive impact.
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="mh-section-info mh-section-info-space mb-50">
+                        <p>Currently have 102 project <br>
+                        partners across in world that work
+                        on child issues. </p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="mhcauses__arrow text-end mb-50">
+                        <button class="mh-arrow-prev mh-arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="#121018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="mh-arrow-next mh-arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L1 1" stroke="#121018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <div class="swiper mhcauses-slider-active">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mhcauses br-20 mh-white-bg mb-55">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mhcauses__img">
+                                    <a href=""><img class="w-100 br-16" src="assets/img/causes/causes-01.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mhcauses__content">
+                                        <div class="mhcauses__content--top">
+                                            <div class="mhcauses__meta">
+                                                <span>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.02396 0.000122102C5.52795 0.0152479 6.01595 0.102089 6.48874 0.26077H6.53594C6.56794 0.27577 6.59194 0.292349 6.60794 0.307348C6.78474 0.3634 6.95194 0.426557 7.11194 0.513398L7.41593 0.647606C7.53593 0.710763 7.67993 0.828392 7.75993 0.876549C7.83993 0.923128 7.92793 0.971285 7.99993 1.02576C8.88872 0.355505 9.96791 -0.00764645 11.0799 0.000122102C11.5847 0.000122102 12.0887 0.0705102 12.5679 0.229192C15.5206 1.17654 16.5846 4.37386 15.6958 7.16855C15.1919 8.59669 14.3679 9.90008 13.2887 10.9651C11.7439 12.4414 10.0487 13.7519 8.22393 14.8808L8.02393 15L7.81593 14.8729C5.98475 13.7519 4.27997 12.4414 2.72078 10.9572C1.6488 9.89219 0.824004 8.59669 0.31201 7.16855C-0.591981 4.37386 0.472008 1.17654 3.45678 0.212613C3.68877 0.133667 3.92797 0.0784048 4.16797 0.0476158H4.26397C4.48877 0.0152479 4.71196 0.000122102 4.93596 0.000122102H5.02396ZM12.1519 2.49494C11.8239 2.38363 11.4639 2.5581 11.3439 2.88967C11.2319 3.22125 11.4079 3.5844 11.7439 3.70203C12.2567 3.8915 12.5999 4.38965 12.5999 4.94148V4.96596C12.5847 5.14674 12.6399 5.32121 12.7519 5.45542C12.8639 5.58963 13.0319 5.66779 13.2079 5.68436C13.5359 5.67568 13.8159 5.41595 13.8399 5.08358V4.98964C13.8639 3.8836 13.1847 2.88178 12.1519 2.49494Z" fill="#FF5555" />
+                                                    </svg>
+                                                    8,220 supporters
+                                                </span>
+                                            </div>
+                                            <h3 class="mhcauses__title"><a href="#">Family planing</a></h3>
+                                            <div class="mhcauses__btn mt-25">
+                                                <a class="mh-btn-border br-12" href="#">Donate</a>
+                                            </div>
+                                        </div>
+                                        <div class="mhcauses__content--bottom">
+                                            <div class="mh-progress mb-20">
+                                                <span style="margin-left: 75%;">75%</span>
+                                                <div class="mh-progress-bar">
+                                                    <div class="mh-progress-bar-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount">
+                                                        <label>Goals:</label>
+                                                        <span>$35,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount text-end">
+                                                        <label>Raised:</label>
+                                                        <span>$55,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mhcauses br-20 mh-white-bg mb-55">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mhcauses__img">
+                                    <a href=""><img class="w-100 br-16" src="assets/img/causes/causes-02.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mhcauses__content">
+                                        <div class="mhcauses__content--top">
+                                            <div class="mhcauses__meta">
+                                                <span>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.02396 0.000122102C5.52795 0.0152479 6.01595 0.102089 6.48874 0.26077H6.53594C6.56794 0.27577 6.59194 0.292349 6.60794 0.307348C6.78474 0.3634 6.95194 0.426557 7.11194 0.513398L7.41593 0.647606C7.53593 0.710763 7.67993 0.828392 7.75993 0.876549C7.83993 0.923128 7.92793 0.971285 7.99993 1.02576C8.88872 0.355505 9.96791 -0.00764645 11.0799 0.000122102C11.5847 0.000122102 12.0887 0.0705102 12.5679 0.229192C15.5206 1.17654 16.5846 4.37386 15.6958 7.16855C15.1919 8.59669 14.3679 9.90008 13.2887 10.9651C11.7439 12.4414 10.0487 13.7519 8.22393 14.8808L8.02393 15L7.81593 14.8729C5.98475 13.7519 4.27997 12.4414 2.72078 10.9572C1.6488 9.89219 0.824004 8.59669 0.31201 7.16855C-0.591981 4.37386 0.472008 1.17654 3.45678 0.212613C3.68877 0.133667 3.92797 0.0784048 4.16797 0.0476158H4.26397C4.48877 0.0152479 4.71196 0.000122102 4.93596 0.000122102H5.02396ZM12.1519 2.49494C11.8239 2.38363 11.4639 2.5581 11.3439 2.88967C11.2319 3.22125 11.4079 3.5844 11.7439 3.70203C12.2567 3.8915 12.5999 4.38965 12.5999 4.94148V4.96596C12.5847 5.14674 12.6399 5.32121 12.7519 5.45542C12.8639 5.58963 13.0319 5.66779 13.2079 5.68436C13.5359 5.67568 13.8159 5.41595 13.8399 5.08358V4.98964C13.8639 3.8836 13.1847 2.88178 12.1519 2.49494Z" fill="#FF5555" />
+                                                    </svg>
+                                                    8,220 supporters
+                                                </span>
+                                            </div>
+                                            <h3 class="mhcauses__title"><a href="#">Family planing</a></h3>
+                                            <div class="mhcauses__btn mt-25">
+                                                <a class="mh-btn-border br-12" href="#">Donate</a>
+                                            </div>
+                                        </div>
+                                        <div class="mhcauses__content--bottom">
+                                            <div class="mh-progress mb-20">
+                                                <span style="margin-left: 75%;">75%</span>
+                                                <div class="mh-progress-bar">
+                                                    <div class="mh-progress-bar-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount">
+                                                        <label>Goals:</label>
+                                                        <span>$35,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount text-end">
+                                                        <label>Raised:</label>
+                                                        <span>$55,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mhcauses br-20 mh-white-bg mb-55">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mhcauses__img">
+                                    <a href=""><img class="w-100 br-16" src="assets/img/causes/causes-03.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mhcauses__content">
+                                        <div class="mhcauses__content--top">
+                                            <div class="mhcauses__meta">
+                                                <span>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.02396 0.000122102C5.52795 0.0152479 6.01595 0.102089 6.48874 0.26077H6.53594C6.56794 0.27577 6.59194 0.292349 6.60794 0.307348C6.78474 0.3634 6.95194 0.426557 7.11194 0.513398L7.41593 0.647606C7.53593 0.710763 7.67993 0.828392 7.75993 0.876549C7.83993 0.923128 7.92793 0.971285 7.99993 1.02576C8.88872 0.355505 9.96791 -0.00764645 11.0799 0.000122102C11.5847 0.000122102 12.0887 0.0705102 12.5679 0.229192C15.5206 1.17654 16.5846 4.37386 15.6958 7.16855C15.1919 8.59669 14.3679 9.90008 13.2887 10.9651C11.7439 12.4414 10.0487 13.7519 8.22393 14.8808L8.02393 15L7.81593 14.8729C5.98475 13.7519 4.27997 12.4414 2.72078 10.9572C1.6488 9.89219 0.824004 8.59669 0.31201 7.16855C-0.591981 4.37386 0.472008 1.17654 3.45678 0.212613C3.68877 0.133667 3.92797 0.0784048 4.16797 0.0476158H4.26397C4.48877 0.0152479 4.71196 0.000122102 4.93596 0.000122102H5.02396ZM12.1519 2.49494C11.8239 2.38363 11.4639 2.5581 11.3439 2.88967C11.2319 3.22125 11.4079 3.5844 11.7439 3.70203C12.2567 3.8915 12.5999 4.38965 12.5999 4.94148V4.96596C12.5847 5.14674 12.6399 5.32121 12.7519 5.45542C12.8639 5.58963 13.0319 5.66779 13.2079 5.68436C13.5359 5.67568 13.8159 5.41595 13.8399 5.08358V4.98964C13.8639 3.8836 13.1847 2.88178 12.1519 2.49494Z" fill="#FF5555" />
+                                                    </svg>
+                                                    8,220 supporters
+                                                </span>
+                                            </div>
+                                            <h3 class="mhcauses__title"><a href="#">Family planing</a></h3>
+                                            <div class="mhcauses__btn mt-25">
+                                                <a class="mh-btn-border br-12" href="#">Donate</a>
+                                            </div>
+                                        </div>
+                                        <div class="mhcauses__content--bottom">
+                                            <div class="mh-progress mb-20">
+                                                <span style="margin-left: 75%;">75%</span>
+                                                <div class="mh-progress-bar">
+                                                    <div class="mh-progress-bar-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount">
+                                                        <label>Goals:</label>
+                                                        <span>$35,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount text-end">
+                                                        <label>Raised:</label>
+                                                        <span>$55,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mhcauses br-20 mh-white-bg mb-55">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mhcauses__img">
+                                    <a href=""><img class="w-100 br-16" src="assets/img/causes/causes-01.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mhcauses__content">
+                                        <div class="mhcauses__content--top">
+                                            <div class="mhcauses__meta">
+                                                <span>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.02396 0.000122102C5.52795 0.0152479 6.01595 0.102089 6.48874 0.26077H6.53594C6.56794 0.27577 6.59194 0.292349 6.60794 0.307348C6.78474 0.3634 6.95194 0.426557 7.11194 0.513398L7.41593 0.647606C7.53593 0.710763 7.67993 0.828392 7.75993 0.876549C7.83993 0.923128 7.92793 0.971285 7.99993 1.02576C8.88872 0.355505 9.96791 -0.00764645 11.0799 0.000122102C11.5847 0.000122102 12.0887 0.0705102 12.5679 0.229192C15.5206 1.17654 16.5846 4.37386 15.6958 7.16855C15.1919 8.59669 14.3679 9.90008 13.2887 10.9651C11.7439 12.4414 10.0487 13.7519 8.22393 14.8808L8.02393 15L7.81593 14.8729C5.98475 13.7519 4.27997 12.4414 2.72078 10.9572C1.6488 9.89219 0.824004 8.59669 0.31201 7.16855C-0.591981 4.37386 0.472008 1.17654 3.45678 0.212613C3.68877 0.133667 3.92797 0.0784048 4.16797 0.0476158H4.26397C4.48877 0.0152479 4.71196 0.000122102 4.93596 0.000122102H5.02396ZM12.1519 2.49494C11.8239 2.38363 11.4639 2.5581 11.3439 2.88967C11.2319 3.22125 11.4079 3.5844 11.7439 3.70203C12.2567 3.8915 12.5999 4.38965 12.5999 4.94148V4.96596C12.5847 5.14674 12.6399 5.32121 12.7519 5.45542C12.8639 5.58963 13.0319 5.66779 13.2079 5.68436C13.5359 5.67568 13.8159 5.41595 13.8399 5.08358V4.98964C13.8639 3.8836 13.1847 2.88178 12.1519 2.49494Z" fill="#FF5555" />
+                                                    </svg>
+                                                    8,220 supporters
+                                                </span>
+                                            </div>
+                                            <h3 class="mhcauses__title"><a href="#">Family planing</a></h3>
+                                            <div class="mhcauses__btn mt-25">
+                                                <a class="mh-btn-border br-12" href="#">Donate</a>
+                                            </div>
+                                        </div>
+                                        <div class="mhcauses__content--bottom">
+                                            <div class="mh-progress mb-20">
+                                                <span style="margin-left: 75%;">75%</span>
+                                                <div class="mh-progress-bar">
+                                                    <div class="mh-progress-bar-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount">
+                                                        <label>Goals:</label>
+                                                        <span>$35,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount text-end">
+                                                        <label>Raised:</label>
+                                                        <span>$55,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mhcauses br-20 mh-white-bg mb-55">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mhcauses__img">
+                                    <a href=""><img class="w-100 br-16" src="assets/img/causes/causes-02.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mhcauses__content">
+                                        <div class="mhcauses__content--top">
+                                            <div class="mhcauses__meta">
+                                                <span>
+                                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.02396 0.000122102C5.52795 0.0152479 6.01595 0.102089 6.48874 0.26077H6.53594C6.56794 0.27577 6.59194 0.292349 6.60794 0.307348C6.78474 0.3634 6.95194 0.426557 7.11194 0.513398L7.41593 0.647606C7.53593 0.710763 7.67993 0.828392 7.75993 0.876549C7.83993 0.923128 7.92793 0.971285 7.99993 1.02576C8.88872 0.355505 9.96791 -0.00764645 11.0799 0.000122102C11.5847 0.000122102 12.0887 0.0705102 12.5679 0.229192C15.5206 1.17654 16.5846 4.37386 15.6958 7.16855C15.1919 8.59669 14.3679 9.90008 13.2887 10.9651C11.7439 12.4414 10.0487 13.7519 8.22393 14.8808L8.02393 15L7.81593 14.8729C5.98475 13.7519 4.27997 12.4414 2.72078 10.9572C1.6488 9.89219 0.824004 8.59669 0.31201 7.16855C-0.591981 4.37386 0.472008 1.17654 3.45678 0.212613C3.68877 0.133667 3.92797 0.0784048 4.16797 0.0476158H4.26397C4.48877 0.0152479 4.71196 0.000122102 4.93596 0.000122102H5.02396ZM12.1519 2.49494C11.8239 2.38363 11.4639 2.5581 11.3439 2.88967C11.2319 3.22125 11.4079 3.5844 11.7439 3.70203C12.2567 3.8915 12.5999 4.38965 12.5999 4.94148V4.96596C12.5847 5.14674 12.6399 5.32121 12.7519 5.45542C12.8639 5.58963 13.0319 5.66779 13.2079 5.68436C13.5359 5.67568 13.8159 5.41595 13.8399 5.08358V4.98964C13.8639 3.8836 13.1847 2.88178 12.1519 2.49494Z" fill="#FF5555" />
+                                                    </svg>
+                                                    8,220 supporters
+                                                </span>
+                                            </div>
+                                            <h3 class="mhcauses__title"><a href="#">Family planing</a></h3>
+                                            <div class="mhcauses__btn mt-25">
+                                                <a class="mh-btn-border br-12" href="#">Donate</a>
+                                            </div>
+                                        </div>
+                                        <div class="mhcauses__content--bottom">
+                                            <div class="mh-progress mb-20">
+                                                <span style="margin-left: 75%;">75%</span>
+                                                <div class="mh-progress-bar">
+                                                    <div class="mh-progress-bar-fill" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount">
+                                                        <label>Goals:</label>
+                                                        <span>$35,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mhcauses__amount text-end">
+                                                        <label>Raised:</label>
+                                                        <span>$55,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mhcauses__textdown text-center">
+                <p>All our efforts are made possible only because of your support. <a href="#">See all Causes</a> </p>
+            </div> 
+        </div>
+    </section>
+    <!-- Causes Area End -->
+
+    <!-- Volunteers Area Start -->
+    <section class="mh-volunteers-area mh-off-white-bg pt-130 pb-75">
+        <div class="container">
+            <div class="mh-section-info mb-50 text-center">
+                <span class="mh-section-sub-title mh-sf mb-20">Help us Now</span>
+                <h2 class="mh-section-title">Volunteers around <br> the world</h2>
+            </div>
+            <div class="mh-world-map p-relative">
+                <img src="assets/img/bg/map.png" alt="">
+                <div class="mh-author-shape">
+                    <img class="mh-author-shape-01 p-absolute" src="assets/img/author/author-01.jpg" alt="">
+                    <img class="mh-author-shape-02 p-absolute" src="assets/img/author/author-02.jpg" alt="">
+                    <img class="mh-author-shape-03 p-absolute" src="assets/img/author/author-03.jpg" alt="">
+                    <img class="mh-author-shape-04 p-absolute" src="assets/img/author/author-04.jpg" alt="">
+                    <img class="mh-author-shape-05 p-absolute" src="assets/img/author/author-05.jpg" alt="">
+                    <img class="mh-author-shape-06 p-absolute" src="assets/img/author/author-06.jpg" alt="">
+                    <img class="mh-author-shape-07 p-absolute" src="assets/img/author/author-07.jpg" alt="">
+                    <img class="mh-author-shape-08 p-absolute" src="assets/img/author/author-08.jpg" alt="">
+                    <img class="mh-author-shape-09 p-absolute" src="assets/img/author/author-09.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Volunteers Area End -->
+
+    <!-- Slider Area Start -->
+    <section class="mh-text-slider-area fix mh-text-bg-1 mh-off-white-bg" data-bg-img="assets/img/bg/text-slider-bg.png">
+        <div class="swiper mh-text-slider-active">
+            <div class="swiper-wrapper tp-slide-transtion">
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="mh-text-slider-title">
+                        <img src="assets/img/icon/star.svg" alt="">
+                        Let’s help each outher
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slider Area End -->
+
+    <!-- Tab Section Start -->
+    <section class="mh-tab-area mh-off-white-bg pt-100 pb-100">
+        <div class="container">
+            <div class="mh-tab">
+
+            </div>
+        </div>
+    </section>
+    <!-- Tab Section end -->
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

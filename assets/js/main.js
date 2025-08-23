@@ -26,6 +26,31 @@ $(function(){
         type: 'iframe'
         // other options
     });
+
+    // causes slider
+    var swiper = new Swiper(".mhcauses-slider-active", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        prevEl: ".mh-arrow-prev",
+        nextEl: ".mh-arrow-next",
+      },
+    });
+
+    // causes slider
+    var swiper = new Swiper(".mh-text-slider-active", {
+      slidesPerView: "auto",
+      spaceBetween: 40,
+      freemode: true,
+      centeredSlides: true,
+      loop: true,
+      speed: 4000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      }
+    });
     
 
 })(jQuery);

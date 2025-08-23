@@ -1,6 +1,17 @@
 @use '../../utils' as *;
 
 .mh-about {
+    &-shape {
+        &-01 {
+            mix-blend-mode: exclusion;
+            left: 97px;
+            top: 23%;
+        }
+        &-02 {
+            right: -232px;
+            top: -50px;
+        }
+    }
     &-img {
         &-shape {
             &-01 {
@@ -40,6 +51,33 @@
                 font-size: 15px;
                 font-weight: 600;
                 color: #F8F3E7; 
+            }
+        }
+    }
+    &-fact {
+        &-shape {
+            mix-blend-mode: multiply;
+            z-index: -1;
+            max-width: inherit;
+            top: -65px;
+            left: -50px;
+        }
+        &-box {
+           padding: 18px 16px;
+        }
+        &-img {
+            margin-right: 12px;
+        }
+        &-info {
+            & h4 {
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 7px;
+            }
+            & p {
+                margin-bottom: 0;
+                font-size: 15px;
+                line-height: 24px;
             }
         }
     }

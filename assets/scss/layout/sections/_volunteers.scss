@@ -1,0 +1,45 @@
+@use '../../utils' as *;
+
+.mh-author-shape {
+    & img {
+        border: 2px solid var(--mh-white-color);
+        box-shadow: 0 10px 30px 0 rgba(18, 16, 24, 0.2);
+        border-radius: 50%;
+    }
+    &-01 {
+        top: 40%;
+        left: 15%;
+    }
+    &-02 {
+        top: 14%;
+        left: 24%;
+    }
+    &-03 {
+        top: 6%;
+        left: 47%;
+    }
+    &-04 {
+        top: 8%;
+        right: 23%;
+    }
+    &-05 {
+        top: 25%;
+        right: 9%;
+    }
+    &-06 {
+        bottom: 14%;
+        right: 8%;
+    }
+    &-07 {
+        top: 30%;
+        right: 30%;
+    }
+    &-08 {
+        bottom: 35%;
+        right: 46%;
+    }
+    &-09 {
+        bottom: 14%;
+        left: 30%;
+    }
+}

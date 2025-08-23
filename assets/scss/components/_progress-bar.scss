@@ -1,0 +1,42 @@
+@use '../utils/' as *;
+
+.mh-progress {
+    & span {
+        background-color: var(--mh-theme-color);
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--mh-heading-color);
+        line-height: 1;
+        display: inline-block;
+        padding: 6px 7px;
+        border-radius: 6px;
+        margin-bottom: 7px;
+        position: relative;
+        transform: translateX(-66%);
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: var(--mh-theme-color) transparent transparent transparent;
+            transform: rotate(0deg);
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            margin: auto;
+        }
+    }
+    &-bar {
+        width: 100%;
+        background-color: rgba(18, 16, 24, 0.1);
+        height: 8px;
+        border-radius: 6px;
+        &-fill {
+            height: 100%;
+            background-color: var(--mh-theme-color);
+            border-radius: 6px;
+        }
+    }
+}

@@ -62,7 +62,11 @@ img{
 .mh-white-bg {
 	background-color: var(--mh-white-color);
 }
-.mh-gray-bg {
-	background-color: var(--mh-gray-color);
+.mh-off-white-bg {
+	background-color: var(--mh-off-white-color);
 }
 
+// font family
+.mh-sub-font, .mh-sf {
+	font-family: var(--mh-sub-heading-font);
+}

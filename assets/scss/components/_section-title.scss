@@ -1,1 +1,33 @@
 @use '../utils/' as *;
+
+.mh-section {
+    &-sub-title {
+        font-size: 30px;
+        color: var(--mh-pink-color);
+        display: block;
+    }
+    &-title {
+        font-size: 60px;
+    }
+    &-paragraph {
+        color: #5A5860;
+    }
+    &-back-title {
+        font-size: 280px;
+        background-image: linear-gradient(179.5deg, #E0DEDA 39.13%, #F2F0EC 104.12%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 600;
+        bottom: 46px;
+        left: -5px;
+    }
+    &-info {
+        &-space {
+            margin-left: 85px;
+            & p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

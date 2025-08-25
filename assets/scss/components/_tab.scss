@@ -1,0 +1,21 @@
+@use '../utils' as *;
+
+.mh-nav-tabs {
+    border: 1px solid rgba(18, 16, 24, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    & button {
+        width: 33.33%;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--mh-body-color);
+        padding: 11px 0;
+        border-radius: 12px;
+        &.active {
+            background-color: var(--mh-theme-color);
+            color: var(--mh-heading-color);
+        }
+    }
+}

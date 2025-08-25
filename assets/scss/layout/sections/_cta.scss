@@ -1,0 +1,75 @@
+@use '../../utils' as *;
+
+.mh-cta {
+    &-padding {
+        padding-top: 38px;
+        padding-left: 34px;
+        padding-right: 40px;
+        &-2 {
+            padding: 50px 40px 0;
+        }
+    }
+    &-img {
+        right: 40px;
+        bottom: 0;
+        & img {
+            width: 100%;
+        }
+        &-2 {
+            right: 0;
+            left: 0;
+            bottom: 0;
+            mix-blend-mode: luminosity;
+            & img {
+                width: 100;
+            }
+        }
+    }
+    &-border-radious {
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.mh-help {
+    &-list {
+        &-item {
+            margin-bottom: 14px;
+            & span {
+                width: 26px;
+                height: 26px;
+                background-color: rgba(248, 243, 231, 0.1);
+                display: inline-block;
+                color: #f8f3e7;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 12px;
+                margin-right: 8px;
+            }
+            & p {
+                color: #F8F3E7;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-amount {
+        & label {
+            color: #F8F3E7;
+            font-weight: 300;
+            font-size: 20px;
+            font-family: var(--mh-heading-font);
+        }
+        & span {
+            color: #F8F3E7;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: var(--mh-heading-font);
+        }
+    }
+    &-bottom {
+        padding: 0 14px;
+        margin-top: 37px;
+    }
+    &-border-radious {
+        border-radius: 0 20px 20px 0;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../../utils' as *;
+
+.mh-fact {
+    &-border {
+        border-left: 2px solid var(--mh-theme-color);
+    }
+    & p {
+        max-width: 220px;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+} 

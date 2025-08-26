@@ -1,0 +1,56 @@
+@use '../../utils' as *;
+
+.mhteam {
+    &__img {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, rgba(7, 4, 16, 0) 60.71%, #070410 99.3%);
+            left: 0;
+            top: 0;
+            border-radius: 20px;
+        }
+    }
+    &__content {
+        left: 0;
+        bottom: 40px;
+        right: 0;
+        text-align: center;
+        & span {
+            color: var(--mh-white-color);
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: -0.02em;
+        color: var(--mh-white-color);
+        margin-bottom: 5px;
+    }
+    &__social {
+        right: 20px;
+        top: 20px;
+        visibility: hidden;
+        opacity: 0;
+        @include mh-transition();
+        & a {
+            width: 36px;
+            height: 36px;
+            background-color: var(--mh-white-color);
+            display: inline-block;
+            border-radius: 50%;
+            line-height: 36px;
+            text-align: center;
+            margin-bottom: 3px;
+            transition: .3s;
+        }
+    }
+    &:hover .mhteam__social {
+        visibility: visible;
+        opacity: 1;
+    }
+}

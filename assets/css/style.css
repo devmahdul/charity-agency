@@ -1171,12 +1171,26 @@ img {
   background-color: var(--mh-off-white-color);
 }
 
+.mh-heading-font, .mh-hf {
+  font-family: var(--mh-heading-font);
+}
+
 .mh-sub-font, .mh-sf {
   font-family: var(--mh-sub-heading-font);
 }
 
 .mh-h-630 {
   min-height: 630px;
+}
+
+.container-1400 {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 12px;
+}
+
+.mh-row {
+  margin: 0 -12px;
 }
 
 .fnw-300 {
@@ -1211,6 +1225,10 @@ img {
   border-radius: 20px;
 }
 
+.br-30 {
+  border-radius: 30px;
+}
+
 .mh-btn {
   background-color: var(--mh-theme-color);
   display: inline-block;
@@ -1222,12 +1240,23 @@ img {
   border-radius: 12px;
   text-transform: capitalize;
 }
+.mh-btn svg {
+  margin-right: 5px;
+}
 .mh-btn-white {
   background-color: var(--mh-white-color);
   color: var(--mh-heading-color);
 }
 .mh-btn-text {
   font-size: 15px;
+}
+.mh-btn-text-icon {
+  font-size: 16px;
+  color: var(--mh-heading-color);
+  font-weight: 600;
+}
+.mh-btn-text-icon svg {
+  margin-left: 8px;
 }
 .mh-btn-border {
   padding: 7px 27px;
@@ -1278,6 +1307,9 @@ img {
   font-weight: 600;
   bottom: 46px;
   left: -5px;
+}
+.mh-section-back-title-2 {
+  bottom: -45px;
 }
 .mh-section-info-space {
   margin-left: 85px;
@@ -1722,6 +1754,14 @@ img {
   padding: 50px 0;
 }
 
+.mh-bran {
+  background-color: var(--mh-white-color);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mh-fact-border {
   border-left: 2px solid var(--mh-theme-color);
 }
@@ -1797,12 +1837,160 @@ img {
   border-radius: 0 20px 20px 0;
 }
 
+.mhevent {
+  padding: 25px 0;
+  line-height: 1;
+  margin-bottom: 12px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.mhevent__date {
+  border-right: 1px solid rgba(18, 16, 24, 0.1);
+  padding: 7px 29px;
+}
+.mhevent__date span {
+  font-size: 14px;
+  color: #454449;
+  display: block;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.mhevent__date--number {
+  font-size: 34px;
+  font-weight: 700;
+  color: #121018;
+}
+.mhevent__title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.mhevent__meta span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  margin-right: 14px;
+}
+.mhevent__meta span svg {
+  margin-right: 8px;
+}
+.mhevent:hover {
+  box-shadow: 0 20px 40px 0 rgba(18, 16, 24, 0.08);
+}
+.mhevent--shape {
+  bottom: 126px;
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+.mhevent--bg {
+  width: 39%;
+  padding-top: 18%;
+  background-position: center;
+  background-size: cover;
+  bottom: 118px;
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.mhteam__img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(7, 4, 16, 0) 60.71%, #070410 99.3%);
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+.mhteam__content {
+  left: 0;
+  bottom: 40px;
+  right: 0;
+  text-align: center;
+}
+.mhteam__content span {
+  color: var(--mh-white-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+.mhteam__title {
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  color: var(--mh-white-color);
+  margin-bottom: 5px;
+}
+.mhteam__social {
+  right: 20px;
+  top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.mhteam__social a {
+  width: 36px;
+  height: 36px;
+  background-color: var(--mh-white-color);
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 3px;
+  transition: 0.3s;
+}
+.mhteam:hover .mhteam__social {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mhsmblog {
+  margin-bottom: 24px;
+}
+.mhsmblog__thumb {
+  margin-right: -24px;
+}
+.mhsmblog__content {
+  padding-left: 33px;
+}
+.mhsmblog__meta span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #454449;
+}
+.mhsmblog__meta span svg {
+  margin-right: 8px;
+}
+.mhsmblog__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.mh-blog-thum-shape {
+  width: 39%;
+  padding-top: 47%;
+  left: 0;
+  bottom: 28px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 20px 20px 0;
+}
+
 .fns-14 {
   font-size: 14px;
 }
 
 .fns-15 {
   font-size: 15px;
+}
+
+.fns-34 {
+  font-size: 34px;
 }
 
 .fns-50 {

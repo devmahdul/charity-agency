@@ -1,1 +1,37 @@
 @use '../../utils' as *;
+
+.mhsmblog {
+    margin-bottom: 24px;
+    &__thumb {
+        margin-right: -24px;
+    }
+    &__content {
+        padding-left: 33px;
+    }
+    &__meta {
+        & span {
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            color: #454449;
+            & svg {
+                margin-right: 8px;
+            }
+        }
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+}
+
+.mh-blog-thum-shape {
+    width: 39%;
+    padding-top: 47%;
+    left: 0;
+    bottom: 28px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+}

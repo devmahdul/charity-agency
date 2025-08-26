@@ -67,10 +67,26 @@ img{
 }
 
 // font family
+.mh-heading-font, .mh-hf {
+	font-family: var(--mh-heading-font);
+}
 .mh-sub-font, .mh-sf {
 	font-family: var(--mh-sub-heading-font);
 }
 
+// Height
 .mh-h-630 {
 	min-height: 630px;
+}
+
+// container
+.container {
+	&-1400 {
+		max-width: 1400px;
+		margin: auto;
+		padding: 0 12px;
+	}
+}
+.mh-row {
+	margin: 0 -12px;
 }

@@ -1,0 +1,58 @@
+@use '../../utils' as *;
+
+.mhevent {
+    padding: 25px 0;
+    line-height: 1;
+    margin-bottom: 12px;
+    @include mh-transition();
+    &__date {
+        border-right: 1px solid rgba(18, 16, 24, 0.1);
+        padding: 7px 29px;
+        & span {
+            font-size: 14px;
+            color: #454449;
+            display: block;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &--number {
+            font-size: 34px;
+            font-weight: 700;
+            color: #121018;
+        }
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    &__meta {
+        & span {
+            display: inline-flex;
+            align-items: center;
+            font-size: 15px;
+            margin-right: 14px;
+            & svg {
+                margin-right: 8px;
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 20px 40px 0 rgba(18, 16, 24, 0.08);
+    }
+    &--shape {
+        bottom: 126px;
+        left: 0;
+        border-radius: 0 20px 20px 0;
+    }
+    &--bg {
+        width: 39%;
+        padding-top: 18%;
+        background-position: center;
+        background-size: cover;
+        bottom: 118px;
+        left: 0;
+        border-radius: 0 20px 20px 0;
+    }
+}

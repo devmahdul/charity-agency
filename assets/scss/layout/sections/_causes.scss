@@ -47,9 +47,11 @@
         & p {
             font-weight: 300;
             font-size: 24px;
-            line-height: 142%;
             letter-spacing: -0.04em;
             font-family: var(--mh-heading-font);
+            @media #{$xs} {
+                font-size: 26px;
+            }
             & a {
                 font-weight: 600;
                 color: var(--mh-heading-color);
@@ -61,6 +63,15 @@
 
 .swiper.mhcauses-slider-active {
 	margin-right: -580px;
+    @media #{$lg} {
+        margin-right: -830px;
+    }
+    @media #{$md} {
+        margin-right: -350px;
+    }
+    @media #{$xs} {
+        margin-right: 0px;
+    }
 }
 
 .mh-arrow {

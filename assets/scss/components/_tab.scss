@@ -13,9 +13,17 @@
         color: var(--mh-body-color);
         padding: 11px 0;
         border-radius: 12px;
+        @media #{$xs} {
+            width: 100%;
+        }
         &.active {
             background-color: var(--mh-theme-color);
             color: var(--mh-heading-color);
         }
+    }
+}
+.mh-tab-img {
+    @media #{$md,$xs} {
+        padding-left: 0;
     }
 }

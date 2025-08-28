@@ -4,8 +4,17 @@
     &-title {
         font-size: 80px;
         font-weight: 300;
+        @media #{$md} {
+            font-size: 65px;
+        }
+        @media #{$xs} {
+            font-size: 35px;
+        }
         & img {
             margin-right: 40px;
+            @media #{$xs} {
+                max-width: 6%;
+            }
         }
     }
 }
@@ -23,6 +32,9 @@
 .mh-text-bg {
     &-1 {
         padding: 50px 0;
+        @media #{$xs} {
+            padding: 60px 0;
+        }
     }
 }
 
@@ -32,4 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media #{$md} {
+        height: 80px;
+    }
 }

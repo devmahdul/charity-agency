@@ -1,8 +1,24 @@
+@use '../../utils' as *;
 
-$font-sizes: 14, 15, 34, 50, 60, 80;
+$font-sizes: (
+  14: null,
+  15: null,
+  26: null,
+  30: null,
+  34: null,
+  50: 42px,
+  60: null,
+  80: null
+);
 
-@each $font-size in $font-sizes {
-    .fns-#{$font-size} {
-        font-size: #{$font-size}px;
+@each $size, $responsive in $font-sizes {
+  .fns-#{$size} {
+    font-size: #{$size}px;
+
+    @if $responsive {
+      @media #{$xs} {
+        font-size: $responsive;
+      }
     }
+  }
 }

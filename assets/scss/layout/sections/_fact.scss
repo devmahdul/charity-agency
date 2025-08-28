@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .mh-fact {
+    &-item {
+        @media #{$lg} {
+            width: 50%;
+        }
+    }
     &-border {
         border-left: 2px solid var(--mh-theme-color);
     }

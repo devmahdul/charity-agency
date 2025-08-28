@@ -2,7 +2,11 @@
 
 .mh-hero {
     &-area {
-        padding: 280px 0 358px;
+        padding: 280px 0 350px;
+        background-size: cover;
+        @media #{$xs} {
+            padding-bottom: 280px;
+        }
     }
     &-sub-title {
         color: var(--mh-theme-color);
@@ -10,12 +14,24 @@
         font-size: 50px;
         line-height: 1.2;
         font-weight: 400;
+        @media #{$xs} {
+            font-size: 35px;
+            line-height: 1;
+        }
     }
     &-title {
         font-size: 120px;
         color: var(--mh-white-color);
         letter-spacing: -0.03em;
         margin-top: 10px;
+        @media #{$lg,$md} {
+            font-size: 92px;
+            letter-spacing: -0.02em;
+        }
+        @media #{$xs} {
+            font-size: 50px;
+            letter-spacing: -0.01em;
+        }
     }
     &-video {
         margin-right: -7px;
@@ -36,6 +52,15 @@
         &-01 {
             left: 161px;
             top: 34%;
+            @media #{$xxlml} {
+                left: 5%;
+                top: 12%;
+            }
+            @media #{$xl,$lg,$md,$xs} {
+                left: auto;
+                top: 15%;
+                right: 20%;
+            }
         }
         &-02 {
             bottom: 22%;

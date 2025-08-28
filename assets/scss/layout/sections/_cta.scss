@@ -1,6 +1,17 @@
 @use '../../utils' as *;
 
 .mh-cta {
+    &-2 {
+        @media #{$xs} {
+            min-height: 530px;
+        }
+    }
+    &-area {
+        @media #{$xs} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     &-padding {
         padding-top: 38px;
         padding-left: 34px;
@@ -12,8 +23,14 @@
     &-img {
         right: 40px;
         bottom: 0;
+        @media #{$xxlml,$lg} {
+            right: -50px;
+        }
         & img {
             width: 100%;
+            @media #{$xxlml,$lg} {
+                width: 80%;
+            }
         }
         &-2 {
             right: 0;
@@ -27,11 +44,35 @@
     }
     &-border-radious {
         border-radius: 20px 0 0 20px;
+        @media #{$md} {
+            border-radius: 0;
+        }
+    }
+    &-p {
+        & br {
+            @media #{$xxlm} {
+                display: none;
+            } 
+        }
     }
 }
 
 .mh-help {
+    &-top {
+       @media #{$xxll} {
+            padding: 35px;
+        } 
+       @media #{$xxlm} {
+            padding: 20px;
+        }
+        @media #{$xs} {
+            padding: 30px;
+        } 
+    }
     &-list {
+        @media #{$xxll,$xxlm,$xl} {
+            padding-right: 0;
+        }
         &-item {
             margin-bottom: 14px;
             & span {
@@ -48,6 +89,9 @@
             & p {
                 color: #F8F3E7;
                 margin-bottom: 0;
+                @media #{$xxlm} {
+                    font-size: 17px;
+                } 
             }
         }
     }
@@ -66,10 +110,13 @@
         }
     }
     &-bottom {
-        padding: 0 14px;
-        margin-top: 37px;
+        padding: 0 14px 14px;
+        margin-top: 34px;
     }
     &-border-radious {
         border-radius: 0 20px 20px 0;
+        @media #{$md} {
+            border-radius: 0;
+        }
     }
 }

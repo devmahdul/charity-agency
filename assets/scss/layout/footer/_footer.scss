@@ -1,1 +1,116 @@
 @use '../../utils' as *;
+
+.mh-footer {
+    &-bg {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        mix-blend-mode: luminosity;
+        opacity: .08;
+    }
+    &-intro-title {
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+    &-social {
+        & a {
+            background-color: var(--mh-white-color);
+            height: 44px;
+            width: 44px;
+            border-radius: 12px;
+            display: inline-block;
+            text-align: center;
+            line-height: 42px;
+        }
+    }
+    &-title {
+        letter-spacing: -0.02em;
+    }
+    &-widget {
+        & ul {
+            list-style: none;
+            & li {
+                display: block;
+                line-height: 1;
+                margin-bottom: 15px;
+                & a {
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.7);
+                    line-height: 1;
+                }
+            }
+        }
+        & p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            font-weight: 500;
+            padding-right: 35px;
+            margin-bottom: 0;
+        }
+    }
+    &-contact {
+        & a {
+            color: var(--mh-white-color);
+            line-height: 1;
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    &-col {
+        &-2 {
+            padding-left: 30px;
+            @media #{$md} {
+                padding-left: 0;
+            }
+        }
+        &-3 {
+            margin-left: -15px;
+            @media #{$md} {
+                margin-left: 0;
+            }
+        }
+    }
+    &-sep {
+        border-top: 1px solid rgba(248, 243, 231, 0.06);
+        margin-top: 60px;
+    }
+    &-copyright {
+        & p {
+            letter-spacing: -0.02em;
+            color: rgba(255, 255, 255, 0.7);
+            & a {
+                font-weight: 600;
+                text-decoration: underline;
+                color: var(--mh-white-color);
+            }
+        }
+    }
+    &-shape {
+        &-01 {
+            top: 0;
+            left: 0;
+        }
+        &-02 {
+            top: -30px;
+            left: 10%;
+        }
+        &-03 {
+            top: 14%;
+            right: 17%;
+        }
+        &-04 {
+            bottom: 55px;
+            left: 40px;
+        }
+        &-05 {
+            bottom: -52px;
+            right: -83px;
+        }
+    }
+}

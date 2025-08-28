@@ -1,6 +1,14 @@
 @use '../../utils' as *;
 
 .mh-about {
+    &-wrapper {
+        @media #{$xl} {
+            padding-left: 20px;
+        }
+        @media #{$lg} {
+            margin-top: 50px;
+        }
+    }
     &-shape {
         &-01 {
             mix-blend-mode: exclusion;
@@ -36,6 +44,13 @@
     &-number{
         bottom: 85px;
         right: -120px;
+        @media #{$lg} {
+            right: -85px;
+        }
+        @media #{$xs} {
+            bottom: 30px;
+            right: 10px;
+        }
         &-info {
             position: absolute;
             text-align: right;

@@ -35,6 +35,17 @@ $(function(){
         prevEl: ".mh-arrow-prev",
         nextEl: ".mh-arrow-next",
       },
+      breakpoints: {
+        991: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        300: {
+          slidesPerView: 1,
+        },
+    },
     });
 
     // causes slider

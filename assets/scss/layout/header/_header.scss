@@ -19,6 +19,12 @@
     }
     &-row {
         display: flex;
+        @media #{$xxl} {
+            margin-left: -1px;
+        }
+        @media #{$xs} {
+            margin-left: -5px;
+        }
     }
     &-logo {
         position: relative;
@@ -42,6 +48,14 @@
     }
     &-content {
         width: 100%;
+        @media #{$lg,$md} {
+            padding: 5px 0;
+            padding-right: 12px;
+        }
+        @media #{$xs} {
+            padding: 15px 0;
+            padding-right: 12px;
+        }
     }
     &-menu {
         ul {
@@ -50,6 +64,9 @@
                 display: inline-block;
                 margin-right: 40px;
                 position: relative;
+                @media #{$xl} {
+                    margin-right: 28px;
+                }
                 a {
                     font-size: 16px;
                     font-weight: 600;
@@ -110,5 +127,9 @@
                 margin-right: 8px;
             }
         }
+    }
+    &-toggle {
+        font-size: 34px;
+        color: var(--mh-primary-color-2);
     }
 }

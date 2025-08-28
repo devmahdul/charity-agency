@@ -1,6 +1,20 @@
 @use '../utils/' as *;
 
 .mh-section {
+    &-info {
+        &-mb {
+            @media #{$lg,$md} {
+                margin-bottom: 30px;
+            }
+        }
+        & P {
+            & br {
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+    }
     &-sub-title {
         font-size: 30px;
         color: var(--mh-pink-color);
@@ -8,6 +22,12 @@
     }
     &-title {
         font-size: 60px;
+        @media #{$md} {
+            font-size: 42px;
+        }
+        @media #{$xs} {
+            font-size: 35px;
+        }
     }
     &-paragraph {
         color: #5A5860;
@@ -21,6 +41,17 @@
         font-weight: 600;
         bottom: 46px;
         left: -5px;
+        @media #{$lg} {
+            font-size: 250px;
+            bottom: 10px;
+        }
+        @media #{$md} {
+            font-size: 190px;
+            bottom: 10px;
+        }
+        @media #{$xs} {
+            font-size: 180px;
+        }
         &-2 {
             bottom: -45px;
         }
@@ -28,6 +59,9 @@
     &-info {
         &-space {
             margin-left: 85px;
+            @media #{$lg,$md,$xs} {
+                margin-left: 0;
+            }
             & p {
                 margin-bottom: 0;
             }

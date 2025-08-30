@@ -65,13 +65,13 @@
     &-col {
         &-2 {
             padding-left: 30px;
-            @media #{$md} {
+            @media #{$md,$xs} {
                 padding-left: 0;
             }
         }
         &-3 {
             margin-left: -15px;
-            @media #{$md} {
+            @media #{$md,$xs} {
                 margin-left: 0;
             }
         }

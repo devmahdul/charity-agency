@@ -1,6 +1,18 @@
 $(function(){
     "use strict";
 
+    // offcanvas
+    $(".mh-header-toggle").on('click',function(){
+      $(".mh-offcanvas-area").addClass("mh-offcanvas-open");
+      $(".mh-offcanvas-overlay").addClass("mh-offcanvas-overlay-open");
+    });
+
+    $(".mh-offcanvas-close-button,.mh-offcanvas-overlay").on('click',function(){
+      $(".mh-offcanvas-area").removeClass("mh-offcanvas-open");
+      $(".mh-offcanvas-overlay").removeClass("mh-offcanvas-overlay-open");
+    });
+
+
     // color
     $("[data-color]").each(function () {
         $(this).css("color", $(this).attr("data-color"))

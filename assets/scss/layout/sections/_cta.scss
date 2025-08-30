@@ -44,7 +44,7 @@
     }
     &-border-radious {
         border-radius: 20px 0 0 20px;
-        @media #{$md} {
+        @media #{$md,$xs} {
             border-radius: 0;
         }
     }
@@ -115,7 +115,7 @@
     }
     &-border-radious {
         border-radius: 0 20px 20px 0;
-        @media #{$md} {
+        @media #{$md,$xs} {
             border-radius: 0;
         }
     }

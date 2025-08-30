@@ -3,7 +3,7 @@
 .mh-section {
     &-info {
         &-mb {
-            @media #{$lg,$md} {
+            @media #{$lg,$md,$xs} {
                 margin-bottom: 30px;
             }
         }
@@ -51,6 +51,9 @@
         }
         @media #{$xs} {
             font-size: 180px;
+        }
+        @media #{$sm} {
+            bottom: 0;
         }
         &-2 {
             bottom: -45px;

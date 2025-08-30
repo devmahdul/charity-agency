@@ -72,6 +72,9 @@
     @media #{$xs} {
         margin-right: 0px;
     }
+    @media #{$sm} {
+        margin-right: -290px;
+    }
 }
 
 .mh-arrow {

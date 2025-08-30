@@ -4,9 +4,15 @@
     margin-bottom: 24px;
     &__thumb {
         margin-right: -24px;
+        @media #{$xs} {
+            margin-right: 0;
+        }
     }
     &__content {
         padding-left: 33px;
+        @media #{$xs} {
+            padding-left: 0;
+        }
     }
     &__meta {
         & span {
@@ -34,7 +40,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 0 20px 20px 0;
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
         position: static;
         width: 100%;
         border-radius: 0;
@@ -48,7 +54,7 @@
 }
 
 .mh-blog-bg {
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
         border-radius: 0;
     }
 }

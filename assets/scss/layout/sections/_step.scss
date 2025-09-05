@@ -1,0 +1,70 @@
+@use '../../utils' as *;
+
+.mh-step {
+    position: relative;
+    &-arrow {
+        position: absolute;
+        right: -70px;
+        top: 35px;
+    }
+    &-number {
+        width: 80px;
+        height: 80px;
+        background-color: var(--mh-off-white-color-2);
+        display: inline-block;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--mh-primary-color);
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    &-title {
+        font-size: 26px;
+        color: var(--mh-off-white-color-2);
+    }
+    &-content {
+        & p {
+            color: rgba(248, 243, 231, 0.6);
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &-shape {
+        &-01 {
+            top: -45px;
+            left: 0;
+            height: 45px;
+        }
+        &-02 {
+            bottom: -45px;
+            left: 0;
+            height: 45px;
+        }
+        &-03 {
+            top: 0;
+            left: 0;
+        }
+        &-04 {
+            top: 60px;
+            right: 0;
+        }
+    }
+    &-down {
+        &-text {
+            border: 1px solid rgba(248, 243, 231, 0.1);
+            border-radius: 20px;
+            margin-bottom: 0;
+            display: inline-block;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: -0.04em;
+            font-weight: 300;
+            padding: 5px 27px;
+            color: var(--mh-off-white-color-2);
+            & a {
+                font-weight: 600;
+            }
+        }
+    }
+}

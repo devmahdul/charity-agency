@@ -1,0 +1,42 @@
+@use '../../utils' as *;
+
+.mh-contact {
+    &-area {
+        &-margin {
+            margin-bottom: -230px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &-img {
+        height: 100%;
+        background-position: right;
+        border-radius: 20px 0 0 20px;
+    }
+    &-form {
+        & input {
+            color: var(--mh-primary-color);
+            letter-spacing: -0.04em;
+            font-size: 16px;
+            border-bottom: 2px solid var(--mh-primary-color);
+            margin-bottom: 15px;
+            @include mh-placeholder {
+                color: rgba(7, 61, 48, 0.7)
+            }
+        }
+        & button {
+            margin-top: 5px;
+        }
+    }
+    &-text {
+        & p {
+            letter-spacing: -0.02em;
+            font-size: 18px;
+            color: var(--mh-primary-color);
+            margin-bottom: 0;
+            & a {
+                font-weight: 600;
+            }
+        }
+    }
+}

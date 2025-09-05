@@ -45,6 +45,27 @@
         line-height: 1;
         padding: 12px 24px;
         border-radius: 8px;
+        &-theme {
+            background-color: var(--mh-theme-color);
+            color: var(--mh-primary-color);
+        }
+    }
+    &-full {
+        background-color: var(--mh-off-white-color-2);
+        display: inline-block;
+        padding: 17px 10px;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--mh-primary-color);
+        border-radius: 12px;
+        line-height: 1;
+    }
+    &-primary {
+        background-color: var(--mh-primary-color);
+        color: var(--mh-white-color);
+        display: inline-block;
     }
 }
 

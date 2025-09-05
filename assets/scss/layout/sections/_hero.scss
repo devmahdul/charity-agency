@@ -7,6 +7,10 @@
         @media #{$xs} {
             padding-bottom: 280px;
         }
+        &-2 {
+            padding-top: 245px;
+            padding-bottom: 190px;
+        }
     }
     &-sub-title {
         color: var(--mh-theme-color);
@@ -31,6 +35,12 @@
         @media #{$xs} {
             font-size: 50px;
             letter-spacing: -0.01em;
+        }
+        &-2 {
+            font-size: 100px;
+            color: var(--mh-off-white-color-2);
+            letter-spacing: -0.02em;
+            padding-right: 50px;
         }
     }
     &-video {
@@ -71,4 +81,49 @@
             left: 0;
         }
     }
+    &-2 {
+        & p {
+            font-size: 24px;
+            color: var(--mh-off-white-color-2);
+        }
+        &-shape {
+            &-1 {
+                top: -50px;
+                left: -70px;
+            }
+            &-2 {
+                bottom: 120px;
+                left: 42%;
+            }
+            &-3 {
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+    &-mask {
+        height: 100%;
+        width: 100%;
+        -webkit-mask-image: url(../img/mask/hero-mask.png);
+        mask-image: url(../img/mask/hero-mask.png);
+        &-wrap {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 920px;
+            height: 100%;
+        }
+        & img {
+            height: 100%;
+            object-fit: cover;
+        }
+        &-line {
+            position: absolute;
+            bottom: 0;
+            left: -4px;
+            transform-origin: left bottom;
+            transform: rotate(8.4deg);
+        }
+    } 
 }

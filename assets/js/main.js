@@ -39,6 +39,12 @@ $(function(){
         // other options
     });
 
+    // image popup
+    $('.popup-image').magnificPopup({
+        type: 'image'
+        // other options
+    });
+
     // causes slider
     var swiper = new Swiper(".mhcauses-slider-active", {
       slidesPerView: 3,
@@ -49,7 +55,7 @@ $(function(){
       },
       breakpoints: {
         991: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         576: {
           slidesPerView: 2,
@@ -58,6 +64,16 @@ $(function(){
           slidesPerView: 1,
         },
     },
+    });
+
+    // causes slider
+    var swiper = new Swiper(".mhcharity-slider-active", {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      navigation: {
+        prevEl: ".mh-arrow-prev",
+        nextEl: ".mh-arrow-next",
+      },
     });
 
     // causes slider
@@ -73,6 +89,11 @@ $(function(){
         delay: 0,
         disableOnInteraction: false,
       }
+    });
+
+    var swiper = new Swiper(".mhlpblog-slider-active", {
+      slidesPerView: 3,
+      spaceBetween: 24,
     });
     
 

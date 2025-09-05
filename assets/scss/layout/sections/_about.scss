@@ -78,7 +78,7 @@
             left: -50px;
         }
         &-box {
-           padding: 18px 16px;
+           padding: 18px 15px;
         }
         &-img {
             margin-right: 12px;
@@ -94,6 +94,24 @@
                 font-size: 15px;
                 line-height: 24px;
             }
+        }
+    }
+    &-quote {
+        &-img {
+            flex: 0 0 auto;
+            & img {
+                margin-right: 25px;
+            }
+        }
+        & p {
+            font-size: 20px;
+            letter-spacing: -0.02em;
+        }
+    }
+    &-2 {
+        &-shape {
+            top: -22%;
+            right: 0;
         }
     }
     

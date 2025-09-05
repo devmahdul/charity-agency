@@ -5,15 +5,51 @@
     border-radius: 16px 16px 0 0;
     border-bottom: 4px solid #f55;
     @include mh-transition();
+    &-2 {
+        padding: 50px 40px;
+        border-radius: 20px;
+    }
     &-margin {
         margin-top: -150px;
     }
     &__title {
         font-size: 24px;
         letter-spacing: -0.02em;
+        &-2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+    }
+    &__content {
+        &-2 {
+            & p {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
     }
     &:hover {
         box-shadow: 0 20px 60px 0 rgba(41, 28, 3, 0.1);
         transform: translateY(-10px);
+    }
+}
+
+.mh-bottom-quote {
+    & img {
+        margin-right: 14px;
+    }
+    & p {
+        font-size: 24px;
+        color: var(--mh-primary-color);
+        margin-bottom: 0;
+        letter-spacing: -0.04em;
+        font-family: var(--mh-heading-font);
+        & a {
+            font-weight: 600;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }

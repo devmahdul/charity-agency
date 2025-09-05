@@ -43,4 +43,22 @@
             border-radius: 6px;
         }
     }
+    &-2 {
+        & label {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--mh-primary-color);
+            display: block;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        &-bar{
+            height: 6px;
+            background-color: #F1F1F1;
+            &-fill {
+                background-color: var(--mh-primary-color);
+            }
+        }
+    }
 }

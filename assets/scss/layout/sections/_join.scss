@@ -1,0 +1,69 @@
+@use '../../utils' as *;
+
+.mh-join {
+    &-number {
+        font-size: 150px;
+        letter-spacing: -0.04em;
+        color: var(--mh-primary-color);
+        line-height: 1;
+    }
+    &-down {
+        & h4 {
+            font-size: 26px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: var(--mh-primary-color);
+        }
+        
+    }
+    &-shape {
+        &-01 {
+            left: -55px;
+            top: 16%;
+            border-radius: 90px;
+            box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+        }
+        &-02 {
+            right: -60px;
+            top: 25%;
+            border-radius: 50%;
+            box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+        }
+        &-03 {
+            left: 13%;
+            bottom: -6%;
+            border-radius: 50%;
+            box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+        }
+        &-04 {
+            right: 8%;
+            bottom: -9%;
+            border-radius: 150px;
+            box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+        }
+    }
+    &-bg-shape {
+        &-01 {
+            width: 300px;
+            height: 300px;
+            background-color: var(--mh-theme-color);
+            border-radius: 50%;
+            opacity: .4;
+            filter: blur(300px);
+            top: 0;
+            right: -20px;
+            z-index: -1;
+        }
+        &-02 {
+            width: 250px;
+            height: 250px;
+            background-color: var(--mh-pink-color);
+            border-radius: 50%;
+            opacity: .4;
+            filter: blur(300px);
+            bottom: -50px;
+            left: 20px;
+            z-index: -1;
+        }
+    }
+}

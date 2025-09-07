@@ -114,5 +114,41 @@
             right: 0;
         }
     }
-    
+    &-thumb {
+        &-shape {
+            &-01 {
+                top: 50%;
+                left: -41%;
+                transform: translateY(-41%);
+                box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.14);
+                border: 6px solid var(--mh-white-color);
+                border-radius: 20px;
+            }
+            &-02 {
+                top: 60px;
+                left: -120px;
+                border-radius: 20px;
+            }
+            &-03 {
+                bottom: 50px;
+                left: -147px;
+                border-radius: 20px;
+            }
+        }
+    }
+    &-3 {
+        margin-left: -20px;
+        padding-right: 20px;
+    }
+    &-list {
+        padding-right: 20px;
+        &-icon {
+            margin-right: 22px;
+            flex: 0 0 auto;
+        }
+        &-title {
+            font-size: 24px;
+            letter-spacing: -0.02em;
+        }
+    }
 }

@@ -148,3 +148,114 @@
         color: var(--mh-primary-color-2);
     }
 }
+
+.mh-header-full {
+    &-row {
+        display: flex;
+    }
+    &-left {
+        width: 260px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &-logo {
+        &-shape {
+            border-style: solid;
+            border-width: 120px 0 0 85px;
+            border-color: transparent transparent transparent var(--mh-primary-color-3);
+            transform: rotate(0deg);
+            position: absolute;
+            top: 0;
+            right: -85px;
+        }
+        &-line {
+            width: 6px;
+            height: calc(100% + 25px);
+            background-color: var(--mh-theme-color);
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            z-index: 222222222;
+            transform: rotate(-35deg);
+            transform-origin: top right;
+        }
+    }
+    &-middle {
+        width: 100%;
+    }
+    &-meta {
+        display: flex;
+        align-items: center;
+        padding: 11px 0;
+        & span {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            & svg {
+                margin-right: 2px;
+            }
+        }
+        &-dvir {
+            width: 1px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            margin: 0 22px;
+        }
+    }
+    &-lang {
+        & ul {
+            list-style: none;
+            & li {
+                line-height: 1;
+                position: relative;
+                & a {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--mh-white-color);
+                    line-height: 1;
+                }
+            }
+        }
+        &-submenu {
+            display: none;
+            width: 70px;
+            background-color: #000;
+            padding: 7px 15px;
+            position: absolute;
+            top: 140%;
+            left: 0;
+            & li {
+                margin: 7px 0;
+            }
+        }
+    }
+    &-menu {
+        border-radius: 0 12px 12px 0;
+    }
+
+    &-right {
+        width: 260px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-btn {
+        & a {
+            color: var(--mh-theme-color);
+            letter-spacing: -0.02em;
+            font-family: var(--mh-sub-heading-font-2);
+            font-weight: 600;
+            font-size: 18px;
+        }
+        & svg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -18px;
+        }
+    }
+}

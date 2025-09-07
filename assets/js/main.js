@@ -27,6 +27,10 @@ $(function(){
     $("[data-bg-img]").each(function () {
         $(this).css("background-image", "url(" + $(this).attr("data-bg-img") + ")")
     })
+    // bg circle bar
+    $("[data-circle-bar]").each(function () {
+        $(this).css("background-image",$(this).attr("data-circle-bar"))
+    })
 
     // border color
     $("[data-border-color]").each(function () {
@@ -43,6 +47,11 @@ $(function(){
     $('.popup-image').magnificPopup({
         type: 'image'
         // other options
+    });
+
+    // menu toggle
+    $(".mh-lang-toggle").on('click',function(){
+        $(".mh-header-full-lang-submenu").slideToggle();
     });
 
     // causes slider
@@ -91,8 +100,24 @@ $(function(){
       }
     });
 
+    // blog slider
     var swiper = new Swiper(".mhlpblog-slider-active", {
       slidesPerView: 3,
+      spaceBetween: 24,
+    });
+
+    // hero slider
+    var swiper = new Swiper(".mh-slider-active", {
+      slidesPerView: 1,
+      navigation: {
+          prevEl: ".mh-slider-arrow-prev",
+          nextEl: ".mh-slider-arrow-next",
+      },
+    });
+
+    // brand slider
+    var swiper = new Swiper(".mhbrand-slider-active", {
+      slidesPerView: 6,
       spaceBetween: 24,
     });
     

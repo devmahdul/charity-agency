@@ -82,13 +82,26 @@ img{
 .mh-heading-font, .mh-hf {
 	font-family: var(--mh-heading-font);
 }
+.mh-heading-font-2, .mh-hf-2 {
+	font-family: var(--mh-heading-font-2);
+}
 .mh-sub-font, .mh-sf {
 	font-family: var(--mh-sub-heading-font);
+}
+.mh-sub-font-2, .mh-sf-2 {
+	font-family: var(--mh-sub-heading-font-2);
 }
 
 // Height
 .mh-h-630 {
 	min-height: 630px;
+}
+
+// line height
+.lh {
+	&-1-2 {
+		line-height: 1.2;
+	}
 }
 
 // container

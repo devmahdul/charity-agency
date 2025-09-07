@@ -95,6 +95,14 @@
     &:hover {
         transform: translateY(-10px);
     }
+    &-2 {
+        box-shadow: 0 20px 40px 0 rgba(18, 16, 24, 0.08);
+        border-radius: 20px;
+        padding: 0;
+        &:hover {
+            transform: translateY(0);
+        }
+    }
     &__img {
         & img {
             border-radius: 12px 12px 0 0;
@@ -108,8 +116,16 @@
     &__title {
         font-size: 26px;
         color: var(--mh-primary-color);
+        &-2 {
+            font-size: 28px;
+            letter-spacing: -0.02em;
+            color: var(--mh-heading-color);
+        }
     }
     &__content {
+        &-2 {
+            padding: 30px 35px 35px;
+        }
         padding: 0 30px;
         & p {
             color: #5C6160;
@@ -150,6 +166,32 @@
         & a {
             font-weight: 600;
             border-bottom: 1px solid rgba(7, 61, 48, 0.2);;
+        }
+        &-2 {
+            & p {
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--mh-body-color);
+            }
+            & a {
+                color: var(--mh-heading-color);
+                text-decoration: underline;
+                font-weight: 700;
+                border-bottom: 0;
+            }
+        }
+    }
+    &__cat {
+        & a {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--mh-heading-color);
+            display: inline-block;
+            background-color: var(--mh-theme-color);
+            line-height: 1;
+            padding: 9px 24px;
+            border-radius: 28px;
+            text-transform: uppercase;
         }
     }
 }

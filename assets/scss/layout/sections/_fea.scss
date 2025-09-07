@@ -1,0 +1,40 @@
+@use '../../utils' as  *;
+
+.mhfea {
+    padding: 30px 40px 40px;
+    &__subtitle {
+        font-size: 16px;
+        color: var(--mh-secondary-color);
+        display: inline-block;
+    }
+    &__title {
+        font-size: 28px;
+        letter-spacing: -0.02em;
+    }
+    & p {
+        font-size: 15px;
+        line-height: 24px;
+        padding-right: 80px;
+    }
+    &__url {
+        & a {
+            width: 44px;
+            height: 44px;
+            border: 1.5px solid rgba(18, 16, 24, 0.08);
+            border-radius: 50%;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            color: var(--mh-heading-color);
+            & i {
+                transform: rotate(-30deg);
+            }
+        }
+    }
+    &__icon {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+    }
+}

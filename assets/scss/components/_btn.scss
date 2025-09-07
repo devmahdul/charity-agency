@@ -61,11 +61,37 @@
         color: var(--mh-primary-color);
         border-radius: 12px;
         line-height: 1;
+        &-red {
+            background-color: var(--mh-secondary-color);
+            color: var(--mh-white-color);
+        }
     }
     &-primary {
         background-color: var(--mh-primary-color);
         color: var(--mh-white-color);
         display: inline-block;
+    }
+    &-red {
+        background-color: var(--mh-secondary-color);
+        color: var(--mh-white-color);
+        display: inline-block;
+        line-height: 1;
+        padding: 12px 23px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+        font-size: 14px;
+        font-weight: 600;
+        &-xl {
+            background-color: var(--mh-secondary-color);
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: var(--mh-white-color);
+            padding: 22px 45px;
+        }
+        &-sm {
+            padding: 19px 50px;
+        }
     }
 }
 

@@ -1206,6 +1206,9 @@ img {
   min-height: 630px;
 }
 
+.lh-1-1 {
+  line-height: 1.1;
+}
 .lh-1-2 {
   line-height: 1.2;
 }
@@ -1350,6 +1353,11 @@ img {
 .mh-btn-red-sm {
   padding: 19px 50px;
 }
+.mh-btn-red-yellow {
+  color: var(--mh-heading-color);
+  background-color: var(--mh-theme-color);
+  padding: 17px 30px;
+}
 
 .mh-help-btn {
   width: 100%;
@@ -1388,6 +1396,10 @@ img {
   .mh-section-title {
     font-size: 35px;
   }
+}
+.mh-section-title-2 span {
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 .mh-section-paragraph {
   color: #5A5860;
@@ -2091,6 +2103,43 @@ img {
   justify-content: center;
 }
 
+.mh-volunteer-shape-01 {
+  display: inline-block;
+  transform: translateX(110px);
+}
+.mh-volunteer-shape-01 svg {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+}
+.mh-volunteer-shape-02 {
+  margin-top: 160px;
+  display: inline-block;
+  transform: translateX(-55px);
+}
+.mh-volunteer-shape-02 svg {
+  position: absolute;
+  left: -12px;
+  top: -7px;
+}
+
+.mhsv {
+  background-color: #EEFCEB;
+  padding: 35px 40px;
+  border-radius: 20px;
+}
+.mhsv__title {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--mh-primary-color-3);
+}
+.mhsv p {
+  color: var(--mh-primary-color-3);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .mh-about-wrapper {
     padding-left: 20px;
@@ -2554,8 +2603,15 @@ img {
     width: 50%;
   }
 }
+.mh-fact-item-2 h4 {
+  letter-spacing: -0.02em;
+}
 .mh-fact-border {
   border-left: 2px solid var(--mh-theme-color);
+}
+.mh-fact-border-2 {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 22px 0;
 }
 .mh-fact p {
   max-width: 220px;

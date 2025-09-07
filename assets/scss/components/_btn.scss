@@ -92,6 +92,11 @@
         &-sm {
             padding: 19px 50px;
         }
+        &-yellow {
+            color: var(--mh-heading-color);
+            background-color: var(--mh-theme-color);
+            padding: 17px 30px;
+        }
     }
 }
 

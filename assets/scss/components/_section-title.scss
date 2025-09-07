@@ -28,6 +28,12 @@
         @media #{$xs} {
             font-size: 35px;
         }
+        &-2 {
+            & span {
+                text-decoration: underline;
+                text-decoration-style: wavy;
+            }
+        }
     }
     &-paragraph {
         color: #5A5860;

@@ -214,3 +214,69 @@
         right: 0;
     }
 }
+
+.mh-custom-donate {
+    &-shape {
+        bottom: 0;
+        right: 0;
+    }
+    &-bg {
+        margin-right: -274px;
+        border-radius: 20px 0 0 20px;
+    }
+    &-thumb {
+        & img {
+            max-width: inherit;
+            margin-top: -42px;
+            margin-left: -80px;
+        }
+    }
+    &-content {
+        font-size: 16px;
+        color: rgba(18, 16, 24, 0.7);
+        margin-bottom: 5px;
+    }
+    &-form {
+        padding-right: 70px;
+    }
+    &-input {
+        position: relative;
+        & input {
+            background-color: var(--mh-white-color);
+            border-bottom: 0;
+            border-radius: 12px;
+            padding: 35px 50px;
+            color: var(--mh-heading-color);
+            font-size: 24px;
+            @include mh-placeholder {
+                font-size: 24px;
+                color: rgba(18, 16, 24, 0.3);
+            }
+        }
+        & label {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--mh-heading-color);
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-button {
+        & button {
+            border: 1px solid rgba(18, 16, 24, 0.1);
+            border-radius: 6px;
+            padding: 7px 9px;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--mh-heading-color);
+            margin-right: 2px;
+            @include mh-transition();
+            &:hover {
+                background-color: rgba(18, 16, 24, 0.06);;
+            }
+        }
+    }
+}

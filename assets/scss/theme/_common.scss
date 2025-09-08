@@ -107,6 +107,14 @@ img{
 	}
 }
 
+// Letter spacing
+.ls {
+	&-02 {
+		letter-spacing: -.02em;
+	}
+}
+
+
 // container
 .container {
 	&-1400 {

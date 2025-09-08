@@ -63,8 +63,14 @@
     box-shadow: 0 36px 16px -24px rgba(22, 18, 5, 0.08);
     &__img {
         padding-right: 6px;
+        @media #{$xs} {
+            padding-right: 0;
+        }
         & > img {
             border-radius: 20px 0 0 20px;
+            @media #{$xs} {
+                border-radius: 20px;
+            }
         }
         &--shape {
             top: 0;
@@ -74,6 +80,13 @@
     &__content {
         padding: 40px 0;
         padding-right: 47px;
+        @media #{$xs} {
+            padding-left: 40px;
+        }
+        @media #{$sm} {
+            padding-left: 0;
+            padding-right: 100px;
+        }
         & p {
             font-size: 16px;
             line-height: 24px;
@@ -113,4 +126,19 @@
 
 .swiper.mhlpblog-slider-active {
     margin-right: -600px;
+    @media #{$xl} {
+        margin-right: -650px;
+    }
+    @media #{$lg} {
+        margin-right: -240px;
+    }
+    @media #{$md} {
+        margin-right: -480px;
+    }
+    @media #{$xs} {
+        margin-right: 0;
+    }
+    @media #{$sm} {
+        margin-right: -130px;
+    }
 }

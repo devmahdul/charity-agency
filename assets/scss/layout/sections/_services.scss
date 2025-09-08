@@ -18,6 +18,9 @@
         &-2 {
             font-size: 26px;
             margin-bottom: 12px;
+            @media #{$sm} {
+                font-size: 24px;
+            }
         }
     }
     &__content {

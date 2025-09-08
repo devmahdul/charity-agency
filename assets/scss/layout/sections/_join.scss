@@ -6,6 +6,9 @@
         letter-spacing: -0.04em;
         color: var(--mh-primary-color);
         line-height: 1;
+        @media #{$xs} {
+            font-size: 85px;
+        }
     }
     &-down {
         & h4 {
@@ -22,24 +25,43 @@
             top: 16%;
             border-radius: 90px;
             box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+            @media #{$xl} {
+                left: -15px;
+            }
+            @media #{$lg} {
+                left: -5px;
+                top: 25%;
+            }
         }
         &-02 {
             right: -60px;
             top: 25%;
             border-radius: 50%;
             box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+            @media #{$xl} {
+                right: -10px;
+            }
+            @media #{$lg} {
+                right: -5px;
+            }
         }
         &-03 {
             left: 13%;
             bottom: -6%;
             border-radius: 50%;
             box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+            @media #{$md} {
+                left: 0;
+            }
         }
         &-04 {
             right: 8%;
             bottom: -9%;
             border-radius: 150px;
             box-shadow: 0 20px 40px 0 rgba(92, 97, 96, 0.2);
+            @media #{$md} {
+                right: 0;
+            }
         }
     }
     &-bg-shape {

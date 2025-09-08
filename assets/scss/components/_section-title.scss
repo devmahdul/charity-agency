@@ -27,6 +27,12 @@
         }
         @media #{$xs} {
             font-size: 35px;
+            line-height: 1.2;
+        }
+        & br {
+            @media #{$md,$xs} {
+                display: none;
+            }
         }
         &-2 {
             & span {

@@ -1,11 +1,25 @@
 @use '../../utils' as *;
 
 .mh-step {
+    &-col {
+        @media #{$md} {
+            width: 50%;
+        }
+        @media #{$xs} {
+            width: 100%;
+        }
+        @media #{$sm} {
+            width: 50%;
+        }
+    }
     position: relative;
     &-arrow {
         position: absolute;
         right: -70px;
         top: 35px;
+        @media #{$lg} {
+            right: -40px;
+        }
     }
     &-number {
         width: 80px;
@@ -22,6 +36,9 @@
     &-title {
         font-size: 26px;
         color: var(--mh-off-white-color-2);
+        @media #{$sm} {
+            font-size: 24px;
+        }
     }
     &-content {
         & p {

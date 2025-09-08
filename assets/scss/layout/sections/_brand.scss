@@ -38,6 +38,9 @@
     }
     &-2 {
         padding: 68px 0;
+        @media #{$lg} {
+            padding: 65px 0;
+        }
     }
 }
 

@@ -8,6 +8,9 @@
         @media #{$lg} {
             margin-top: 50px;
         }
+        @media #{$md,$xs} {
+            padding-left: 0;
+        }
     }
     &-shape {
         &-01 {
@@ -112,6 +115,11 @@
         &-shape {
             top: -22%;
             right: 0;
+            z-index: -1;
+            @media #{$md} {
+                top: 0;
+                max-width: 40%;
+            }
         }
     }
     &-thumb {

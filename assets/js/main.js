@@ -83,6 +83,20 @@ $(function(){
         prevEl: ".mh-arrow-prev",
         nextEl: ".mh-arrow-next",
       },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        }
+      },
     });
 
     // causes slider
@@ -104,6 +118,20 @@ $(function(){
     var swiper = new Swiper(".mhlpblog-slider-active", {
       slidesPerView: 3,
       spaceBetween: 24,
+      breakpoints: {
+          300: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+      },
     });
 
     // hero slider

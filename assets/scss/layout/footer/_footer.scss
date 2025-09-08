@@ -10,6 +10,9 @@
         &-title {
             font-size: 50px;
             color: var(--mh-white-color);
+            @media #{$xs} {
+                font-size: 35px;
+            }
             & a {
                 color: var(--mh-theme-color);
                 text-decoration: underline;
@@ -153,14 +156,26 @@
             &-01 {
                 top: -45px;
                 left: 0;
+                height: 45px;
             }
         }
         &-col {
+            &-2 {
+                @media #{$lg} {
+                    padding-left: 40px;
+                }
+            }
             &-3 {
                 padding-left: 48px;
+                @media #{$lg,$md,$xs} {
+                    padding-left: 0;
+                }
             }
             &-4 {
                 padding-left: 72px;
+                @media #{$lg,$md,$xs} {
+                    padding-left: 0;
+                }
             }
         }     
     }

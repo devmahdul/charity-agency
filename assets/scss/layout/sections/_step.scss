@@ -1,6 +1,7 @@
 @use '../../utils' as *;
 
 .mh-step {
+    position: relative;
     &-col {
         @media #{$md} {
             width: 50%;
@@ -12,7 +13,6 @@
             width: 50%;
         }
     }
-    position: relative;
     &-arrow {
         position: absolute;
         right: -70px;

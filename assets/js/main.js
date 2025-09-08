@@ -121,5 +121,20 @@ $(function(){
       spaceBetween: 24,
     });
     
+    // testimonial slider
+    var swiper = new Swiper(".mh-testimonial-slider-active", {
+      slidesPerView: 1,
+      navigation: {
+          prevEl: ".mh-test-arrow-prev",
+          nextEl: ".mh-test-arrow-next",
+      },
+    });
+
+    // gallery slider
+    var swiper = new Swiper(".mh-gallery-slider-active", {
+      slidesPerView: 5,
+      spaceBetween: 12,
+    });
+    
 
 })(jQuery);

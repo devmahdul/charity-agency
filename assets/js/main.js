@@ -147,6 +147,20 @@ $(function(){
     var swiper = new Swiper(".mhbrand-slider-active", {
       slidesPerView: 6,
       spaceBetween: 24,
+      breakpoints: {
+        300: {
+          slidesPerView: 3,
+        },
+        500: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 6,
+        },
+      }
     });
     
     // testimonial slider
@@ -162,6 +176,17 @@ $(function(){
     var swiper = new Swiper(".mh-gallery-slider-active", {
       slidesPerView: 5,
       spaceBetween: 12,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        500: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+      }
     });
     
 

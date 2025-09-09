@@ -6,6 +6,14 @@
         padding-bottom: 240px;
         position: relative;
         z-index: 2;
+        @media #{$xl} {
+            padding-top: 180px;
+            padding-bottom: 220px;
+        }
+        @media #{$xs} {
+            padding-top: 100px;
+            padding-bottom: 115px;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -24,6 +32,9 @@
         color: var(--mh-theme-color);
         display: inline-block;
         position: relative;
+        @media #{$xs} {
+            font-size: 16px;
+        }
         &:before,
         &:after {
             content: "";
@@ -32,12 +43,21 @@
             height: 1px;
             background-color: var(--mh-theme-color);
             top: 50%;
+            @media #{$xs} {
+                width: 30px;
+            }
         }
         &:before {
             left: -90px;
+            @media #{$xs} {
+                left: -40px;
+            }
         }
         &:after {
             right: -90px;
+            @media #{$xs} {
+                right: -40px;
+            }
         }
     }
     &-title {
@@ -45,6 +65,15 @@
         letter-spacing: -0.02em;
         color: var(--mh-white-color);
         line-height: 1.1;
+        @media #{$xl,$lg} {
+            font-size: 75px;
+        }
+        @media #{$md} {
+            font-size: 55px;
+        }
+        @media #{$xs} {
+            font-size: 35px;
+        }
     }
     &-arrow {
         position: absolute;

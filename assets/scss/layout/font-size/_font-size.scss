@@ -1,27 +1,79 @@
 @use '../../utils' as *;
 
-$font-sizes: (
-  14: null,
-  16: null,
-  15: null,
-  20: null,
-  26: null,
-  30: null,
-  34: null,
-  40: null,
-  50: 42px,
-  60: null,
-  80: null
-);
+// $font-sizes: (
+//   14: null,
+//   16: null,
+//   15: null,
+//   20: null,
+//   26: null,
+//   30: null,
+//   34: null,
+//   40: null,
+//   50: 42px,
+//   60: null,
+//   80: 60px,
+// );
 
-@each $size, $responsive in $font-sizes {
-  .fns-#{$size} {
-    font-size: #{$size}px;
+// @each $size, $responsive in $font-sizes {
+//   .fns-#{$size} {
+//     font-size: #{$size}px;
 
-    @if $responsive {
-      @media #{$xs} {
-        font-size: $responsive;
-      }
+//     @if $responsive {
+//       @media #{$lg,$md} {
+//         font-size: $responsive;
+//       }
+//       @media #{$xs} {
+//         font-size: $responsive;
+//       }
+//     }
+//   }
+// }
+
+
+.fns {
+  &-14 {
+    font-size: 14px;
+  }
+  &-15 {
+    font-size: 15px;
+  }
+  &-16 {
+    font-size: 16px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-26 {
+    font-size: 26px;
+  }
+  &-30 {
+    font-size: 30px;
+  }
+  &-34 {
+    font-size: 34px;
+  }
+  &-40 {
+    font-size: 40px;
+  }
+  &-50 {
+    font-size: 50px;
+    @media #{$xs} {
+      font-size: 42px;
+    }
+  }
+  &-60 {
+    font-size: 60px;
+  }
+  &-80 {
+    font-size: 80px;
+    @media #{$lg} {
+      font-size: 60px;
+    }
+    @media #{$md} {
+      font-size: 50px;
+    }
+    @media #{$xs} {
+      font-size: 45px;
     }
   }
 }

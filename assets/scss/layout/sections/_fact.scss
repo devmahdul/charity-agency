@@ -16,6 +16,12 @@
         &-2 {
             border-right: 1px solid rgba(255, 255, 255, 0.1);
             padding: 22px 0;
+            @media #{$lg} {
+                width: auto;
+            }
+            @media #{$md,$xs} {
+                border-right: 0;
+            }
         }
     }
     & p {

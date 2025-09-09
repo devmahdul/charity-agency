@@ -14,6 +14,9 @@
         line-height: 1.4;
         color: var(--mh-heading-color);
         padding: 0 50px;
+        @media #{$xs} {
+            font-size: 16px;
+        }
     }
     &-user {
         display: flex;
@@ -47,10 +50,20 @@
     align-items: center;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 15px;
     transform: translateY(-50%);
+    @media #{$xs} {
+        width: 35px;
+        height: 35px;
+        z-index: 2;
+    }
     &-next {
         left: auto;
-        right: 0;
+        right: 15px;
+    }
+    & svg {
+        @media #{$xs} {
+            width: 8px;
+        }
     }
 }

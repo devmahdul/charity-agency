@@ -238,16 +238,61 @@
     &-shape {
         bottom: 0;
         right: 0;
+        @media #{$lg} {
+            bottom: 2px;
+            right: 13px;
+        }
     }
     &-bg {
         margin-right: -274px;
         border-radius: 20px 0 0 20px;
+        @media #{$lg,$md,$xs} {
+            margin-right: 0;
+            border-radius: 0;
+            background-size: cover;
+        }
     }
     &-thumb {
         & img {
             max-width: inherit;
             margin-top: -42px;
             margin-left: -80px;
+            @media #{$lg,$md,$xs} {
+                margin-top: 0;
+                margin-left: 0;
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &-circle {
+        width: 400px;
+        height: 400px;
+        background-color: var(--mh-primary-color-3);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 68px;
+        right: -40%;
+        z-index: -1;
+        @media #{$lg,$md,$xs} {
+            right: 14%;
+        }
+        @media #{$xs} {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    &-wrapper {
+        @media #{$lg,$md,$xs} {
+            padding: 30px;
+        }
+        & .mh-section-title {
+            font-size: 50px;
+            & br {
+                @media #{$md} {
+                    display: block;
+                }
+            }
         }
     }
     &-content {
@@ -257,6 +302,12 @@
     }
     &-form {
         padding-right: 70px;
+        @media #{$lg,$md} {
+            padding-right: 40%;
+        }
+        @media #{$xs} {
+            padding-right: 0;
+        }
     }
     &-input {
         position: relative;
@@ -286,13 +337,17 @@
         & button {
             border: 1px solid rgba(18, 16, 24, 0.1);
             border-radius: 6px;
-            padding: 7px 9px;
+            padding: 9px 15px;
             line-height: 1;
             font-size: 14px;
             font-weight: 600;
             color: var(--mh-heading-color);
             margin-right: 2px;
+            margin-bottom: 10px;
             @include mh-transition();
+            @media #{$xl} {
+                padding-right: 20px;
+            }
             &:hover {
                 background-color: rgba(18, 16, 24, 0.06);;
             }

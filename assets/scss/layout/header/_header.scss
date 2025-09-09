@@ -82,6 +82,9 @@
                 @media #{$xl} {
                     margin-right: 28px;
                 }
+                @media #{$xxlm} {
+                    margin-right: 20px;
+                }
                 a {
                     font-size: 16px;
                     font-weight: 600;
@@ -110,6 +113,7 @@
                     visibility: hidden;
                     opacity: 0;
                     @include mh-transition();
+                    z-index: 9;
                     & li {
                         display: block;
                         margin-right: 0;
@@ -146,20 +150,42 @@
     &-toggle {
         font-size: 34px;
         color: var(--mh-primary-color-2);
+        &-2 {
+            background-color: var(--mh-white-color);
+            padding: 7px 14px;
+            font-size: 22px;
+        }
     }
 }
 
 .mh-header-full {
+    &-area {
+        @media #{$lg,$md,$xs} {
+            padding: 10px 30px;
+        }
+    }
     &-row {
         display: flex;
+        @media #{$lg,$md,$xs} {
+            justify-content: space-between;
+        }
     }
     &-left {
         width: 260px;
         flex: 0 0 auto;
         display: flex;
         align-items: center;
+        @media #{$xl} {
+            width: 180px;
+        }
     }
     &-logo {
+        @media #{$xl} {
+            padding-left: 20px;
+        }
+        @media #{$lg,$md,$xs} {
+            padding-left: 0;
+        }
         &-shape {
             border-style: solid;
             border-width: 120px 0 0 85px;
@@ -168,6 +194,10 @@
             position: absolute;
             top: 0;
             right: -85px;
+            @media #{$xl} {
+                border-width: 120px 0 0 35px;
+                right: -34px;
+            }
         }
         &-line {
             width: 6px;
@@ -179,10 +209,19 @@
             z-index: 222222222;
             transform: rotate(-35deg);
             transform-origin: top right;
+            @media #{$xl} {
+                height: calc(100% + 5px);
+                transform: rotate(-16deg);
+            }
         }
     }
     &-middle {
         width: 100%;
+    }
+    &-top {
+        @media #{$xl} {
+            padding-left: 50px;
+        }
     }
     &-meta {
         display: flex;
@@ -202,6 +241,9 @@
             background-color: rgba(255, 255, 255, 0.2);
             display: inline-block;
             margin: 0 22px;
+            @media #{$xl} {
+                margin: 0 20px;
+            }
         }
     }
     &-lang {
@@ -233,6 +275,9 @@
     }
     &-menu {
         border-radius: 0 12px 12px 0;
+        @media #{$xl} {
+            padding-left: 50px;
+        }
     }
 
     &-right {
@@ -241,6 +286,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media #{$xl} {
+            width: 200px;
+        }
     }
     &-btn {
         & a {
@@ -249,6 +297,9 @@
             font-family: var(--mh-sub-heading-font-2);
             font-weight: 600;
             font-size: 18px;
+            @media #{$xl} {
+                font-size: 15px;
+            }
         }
         & svg {
             position: absolute;

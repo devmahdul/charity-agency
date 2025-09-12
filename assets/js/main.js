@@ -1,6 +1,41 @@
 $(function(){
     "use strict";
 
+    // Mobile Menu Custo
+
+    var mhMenuHTML = $('.mh-mobile-menu-active > ul').clone();
+    var mhOffcanvasMenu = $('.mh-offcanvas-menu > nav');
+
+    mhOffcanvasMenu.append(mhMenuHTML);
+
+    if($(mhOffcanvasMenu).find('.sub-menu').length !=0) {
+      $(mhOffcanvasMenu).find('.sub-menu').parent().append('<button class="mh-sidemenu-close"><i class="far fa-chevron-right"></i></button>');
+    }
+
+    var mhSideMenuToggle = $('button.mh-sidemenu-close');
+
+
+    // long process
+
+    /* $(mhSideMenuToggle).on('click',function(e) {
+      e.preventDefault();
+      if (!($(this).parent().hasClass('active'))) {
+        $(this).parent().addClass('active');
+        $(this).siblings('.sub-menu').slideDown();
+      } else {
+        $(this).siblings('.sub-menu').slideUp();
+        $(this).parent().removeClass('active');
+      }
+    }) */
+
+    // short process
+    $(mhSideMenuToggle).click(function(){
+      $(this).siblings('.sub-menu').slideToggle();
+      $(this).parent().toggleClass('active');
+    })
+
+    
+
     // offcanvas
     $(".mh-header-toggle").on('click',function(){
       $(".mh-offcanvas-area").addClass("mh-offcanvas-open");
@@ -185,6 +220,9 @@ $(function(){
         },
         768: {
           slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 5,
         },
       }
     });

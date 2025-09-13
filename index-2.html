@@ -27,15 +27,21 @@
                         </div>
                         <div class="mh-header-content d-flex justify-content-end justify-content-xl-between align-items-center">
                             <div class="mh-header-menu d-none d-xl-block ml-50">
-                                <nav>
+                                <nav class="mh-mobile-menu-active">
                                     <ul>
-                                        <li><a href="#">Home</a>
+                                        <li class="has-dropdown"><a href="#">Home</a>
                                             <ul class="sub-menu">
                                                 <li><a href="#">Home 01</a></li>
                                                 <li><a href="#">Home 02</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="#">Home 01</a></li>
-                                                        <li><a href="#">Home 02</a></li>
+                                                        <li><a href="#">Home 02</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#">Home 01</a></li>
+                                                                <li><a href="#">Home 02</a></li>
+                                                                <li><a href="#">Home 03</a></li>
+                                                            </ul>
+                                                        </li>
                                                         <li><a href="#">Home 03</a></li>
                                                     </ul>
                                                 </li>
@@ -43,7 +49,13 @@
                                             </ul>
                                         </li>
                                         <li><a href="#">About</a></li>
-                                        <li><a href="#">Causes</a></li>
+                                        <li class="has-dropdown"><a href="#">Causes</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Home 01</a></li>
+                                                <li><a href="#">Home 02</a></li>
+                                                <li><a href="#">Home 03</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Donate</a></li>
                                         <li><a href="#">Contact</a></li>                                                   
@@ -86,6 +98,13 @@
                     <button class="mh-offcanvas-close-button"><i class="fal fa-times"></i></button>
                 </div>
             </div>
+            
+            <div class="mh-offcanvas-menu mb-50">
+                <nav>
+                    
+                </nav>
+            </div>
+
             <div class="mh-offcanvas-content mb-40">
                 <h4 class="mh-offcanvas-title mb-10">Hello There!</h4>
                 <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit.</p>

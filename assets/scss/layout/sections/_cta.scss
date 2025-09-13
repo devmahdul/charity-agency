@@ -3,7 +3,10 @@
 .mh-cta {
     &-2 {
         @media #{$xs} {
-            min-height: 530px;
+            min-height: 560px;
+        }
+        @media #{$sm} {
+            min-height: 630px;
         }
     }
     &-area {
@@ -26,9 +29,13 @@
         @media #{$xxlml,$lg} {
             right: -50px;
         }
+        @media #{$xs} {
+            right: -50px;
+            bottom: 0;
+        }
         & img {
             width: 100%;
-            @media #{$xxlml,$lg} {
+            @media #{$xxlml,$lg,$xs} {
                 width: 80%;
             }
         }

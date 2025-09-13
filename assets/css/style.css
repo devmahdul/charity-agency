@@ -1601,6 +1601,35 @@ img {
   }
 }
 
+.mh-breadcrumb-bg {
+  position: relative;
+  z-index: 2;
+}
+.mh-breadcrumb-bg:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.mh-breadcrumb-title {
+  font-size: 84px;
+  letter-spacing: -0.02em;
+  color: var(--mh-white-color);
+}
+.mh-breadcrumb-list span {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+.mh-breadcrumb-list .active {
+  color: var(--mh-theme-color);
+}
+
 .mh-header-transparent {
   position: absolute;
   top: 26px;
@@ -3041,7 +3070,12 @@ img {
 
 @media (max-width: 767px) {
   .mh-cta-2 {
-    min-height: 530px;
+    min-height: 560px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .mh-cta-2 {
+    min-height: 630px;
   }
 }
 @media (max-width: 767px) {
@@ -3067,10 +3101,16 @@ img {
     right: -50px;
   }
 }
+@media (max-width: 767px) {
+  .mh-cta-img {
+    right: -50px;
+    bottom: 0;
+  }
+}
 .mh-cta-img img {
   width: 100%;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1700px), only screen and (min-width: 992px) and (max-width: 1199.99px) {
+@media only screen and (min-width: 1400px) and (max-width: 1700px), only screen and (min-width: 992px) and (max-width: 1199.99px), (max-width: 767px) {
   .mh-cta-img img {
     width: 80%;
   }
@@ -3478,6 +3518,43 @@ img {
 }
 .mh-bottom-quote-team p a {
   border-bottom: 1px solid rgba(7, 61, 48, 0.2);
+}
+
+.mh-sm-team {
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 20px;
+  padding: 45px 30px 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.mh-sm-team:hover {
+  border: 1px solid #f45927;
+  box-shadow: 0 1px 2px 0 rgba(146, 40, 5, 0.16);
+}
+.mh-sm-team-thumb img {
+  border-radius: 50%;
+}
+.mh-sm-team-content span {
+  font-size: 16px;
+}
+.mh-sm-team-title {
+  letter-spacing: -0.02em;
+  font-size: 20px;
+}
+.mh-sm-team-social a {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.mh-sm-team-social a svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
 }
 
 .mh-step {
@@ -4389,6 +4466,9 @@ img {
 }
 .fns-20 {
   font-size: 20px;
+}
+.fns-24 {
+  font-size: 24px;
 }
 .fns-26 {
   font-size: 26px;

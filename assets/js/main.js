@@ -2,7 +2,7 @@ $(function(){
     "use strict";
 
     // Mobile Menu Custo
-
+  
     var mhMenuHTML = $('.mh-mobile-menu-active > ul').clone();
     var mhOffcanvasMenu = $('.mh-offcanvas-menu > nav');
 
@@ -29,7 +29,7 @@ $(function(){
     }) */
 
     // short process
-    $(mhSideMenuToggle).click(function(){
+    $(mhSideMenuToggle).on('click',function(){
       $(this).siblings('.sub-menu').slideToggle();
       $(this).parent().toggleClass('active');
     })

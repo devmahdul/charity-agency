@@ -55,6 +55,17 @@
             justify-content: center;
         }
     }
+    &-2 {
+        & p {
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            color: var(--mh-heading-color);
+            font-family: var(--mh-heading-font-2);
+            & a {
+                color: var(--mh-primary-color-3);
+            }
+        }
+    }
 }
 
 .mh-volunteer-shape {

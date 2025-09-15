@@ -19,6 +19,13 @@
         font-size: 30px;
         color: var(--mh-pink-color);
         display: block;
+        & samp {
+            height: 1px;
+            width: 60px;
+            background-color: var(--mh-secondary-color);
+            display: inline-block;
+            transform: translateY(-3px);
+        }
     }
     &-title {
         font-size: 60px;
@@ -87,6 +94,11 @@
             }
             & p {
                 margin-bottom: 0;
+            }
+        }
+        &-2 {
+            & p {
+                padding-right: 55px;
             }
         }
     }

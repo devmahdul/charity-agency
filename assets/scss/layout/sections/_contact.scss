@@ -1,5 +1,122 @@
 @use '../../utils' as *;
 
+.mh-form {
+    border: 1px solid rgba(18, 16, 24, 0.1);
+    border-radius: 20px;
+    padding: 60px;
+    padding-bottom: 45px;
+    margin-left: 50px;
+    &-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3C3A40;
+        line-height: 1;
+        margin-bottom: 13px;
+    }
+    &-info {
+        & ul {
+            list-style: none;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(69, 68, 73, 0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        &-label {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #85838B;
+            display: block;
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+        &-text {
+            & a {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--mh-heading-color);
+                letter-spacing: -0.02em;
+                line-height: 1;
+            }
+        }
+    }
+    &-map {
+        & iframe {
+            width: 100%;
+            height: 240px;
+            border: 1px solid rgba(18, 16, 24, 0.1);
+            border-radius: 16px;
+        }
+    }
+    &-quote {
+        & p {
+            font-size: 13px;
+            font-weight: 500;
+            color: #525356;
+            margin-top: 5px;
+            & a {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.mh-contact {
+    &-info {
+        &-wrap {
+            & .col-xl-4:nth-child(1) {
+                & .mh-contact-info {
+                    border-left: 1px solid rgba(18, 16, 24, 0.08);
+                }
+            }
+        }
+        border-right: 1px solid rgba(18, 16, 24, 0.08);
+        padding: 20px 50px;
+        &-title {
+            font-size: 26px;
+            font-weight: 500;
+            color: var(--mh-secondary-color);
+            font-family: var(--mh-sub-heading-font-2);
+        }
+        &-list {
+            border-bottom: 1px solid rgba(18, 16, 24, 0.08);
+            padding: 20px 0;
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+            & label {
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--mh-heading-color);
+                display: block;
+                margin-bottom: 5px;
+            }
+            & a {
+                font-size: 16px;
+                line-height: 22px;
+                color: #3C3A40;
+                display: inline-block;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
 .mh-contact {
     @media #{$md} {
         padding-left: 35px;

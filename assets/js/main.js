@@ -34,6 +34,13 @@ $(function(){
       $(this).parent().toggleClass('active');
     })
 
+
+    // FAQ
+    $(".mh-faq-button").on('click',function(){
+        $('.mh-faq-item').removeClass('active');
+        $(this).closest('.mh-faq-item').addClass('active');
+    });
+
     
 
     // offcanvas

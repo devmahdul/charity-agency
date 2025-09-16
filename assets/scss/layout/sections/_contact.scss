@@ -74,6 +74,8 @@
 
 .mh-contact {
     &-info {
+        border-right: 1px solid rgba(18, 16, 24, 0.08);
+        padding: 20px 50px;
         &-wrap {
             & .col-xl-4:nth-child(1) {
                 & .mh-contact-info {
@@ -81,8 +83,6 @@
                 }
             }
         }
-        border-right: 1px solid rgba(18, 16, 24, 0.08);
-        padding: 20px 50px;
         &-title {
             font-size: 26px;
             font-weight: 500;

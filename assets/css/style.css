@@ -1427,6 +1427,7 @@ img {
 .mh-section-title-2 span {
   text-decoration: underline;
   text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
   .mh-section-title-2 br {
@@ -1695,6 +1696,31 @@ img {
   line-height: 26px;
   color: #454449;
   padding: 0 30px 30px;
+}
+
+.mh-pagination ul {
+  list-style: none;
+}
+.mh-pagination ul li {
+  display: inline-block;
+}
+.mh-pagination ul li a {
+  width: 50px;
+  height: 50px;
+  color: #5A5860;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.mh-pagination ul li.current a, .mh-pagination ul li:hover a {
+  background-color: var(--mh-secondary-color);
+  color: var(--mh-white-color);
 }
 
 .mh-header-transparent {

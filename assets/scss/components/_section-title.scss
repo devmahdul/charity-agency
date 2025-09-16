@@ -48,6 +48,7 @@
             & span {
                 text-decoration: underline;
                 text-decoration-style: wavy;
+                text-decoration-thickness: 2px;
             }
             & br {
             @media #{$md} {

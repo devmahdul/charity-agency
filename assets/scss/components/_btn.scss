@@ -10,8 +10,14 @@
     font-weight: 600;
     border-radius: 12px;
     text-transform: capitalize;
-    & svg {
-        margin-right: 5px;
+    &-2 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 21px 34px;
+        & svg {
+            margin-right: 8px;
+        }
     }
     &-white {
         background-color: var(--mh-white-color);

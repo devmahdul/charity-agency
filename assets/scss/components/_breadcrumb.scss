@@ -2,6 +2,7 @@
 
 .mh-breadcrumb {
     &-bg {
+        background-size: cover;
         position: relative;
         z-index: 2;
         &:before {

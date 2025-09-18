@@ -92,6 +92,9 @@
     padding: 10px;
     transform: translateY(0);
     @include mh-transition();
+    &-border {
+        border: 1px solid rgba(18, 16, 24, 0.1);
+    }
     &:hover {
         transform: translateY(-10px);
     }

@@ -1620,6 +1620,7 @@ img {
 }
 
 .mh-breadcrumb-bg {
+  background-size: cover;
   position: relative;
   z-index: 2;
 }
@@ -2752,6 +2753,9 @@ img {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+.mhcharity-border {
+  border: 1px solid rgba(18, 16, 24, 0.1);
+}
 .mhcharity:hover {
   transform: translateY(-10px);
 }
@@ -3233,7 +3237,7 @@ img {
   mix-blend-mode: luminosity;
 }
 .mh-cta-img-2 img {
-  width: 100;
+  width: 100%;
 }
 .mh-cta-border-radious {
   border-radius: 20px 0 0 20px;
@@ -3359,7 +3363,7 @@ img {
 .mhevent:hover {
   box-shadow: 0 20px 40px 0 rgba(18, 16, 24, 0.08);
 }
-.mhevent--shape {
+.mhevent__shape {
   bottom: 126px;
   left: 0;
   border-radius: 0 20px 20px 0;

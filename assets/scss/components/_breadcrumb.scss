@@ -15,6 +15,10 @@
             top: 0;
             z-index: -1;
         }
+        &-2 {
+            padding-top: 240px;
+            padding-bottom: 185px;
+        }
     }
     &-title {
         font-size: 84px;
@@ -32,4 +36,16 @@
             color: var(--mh-theme-color);
         }
     }
+    &-shape {
+        &-01 {
+            left: 7%;
+            top: 35%;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        &-down {
+            left: 0;
+            bottom: 0;
+        }
+    }
+
 }

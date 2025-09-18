@@ -9,6 +9,7 @@
                 width: 50px;
                 height: 50px;
                 color: #5A5860;
+                background-color: transparent;
                 display: inline-block;
                 line-height: 50px;
                 text-align: center;
@@ -21,6 +22,17 @@
                 & a {
                     background-color: var(--mh-secondary-color);
                     color: var(--mh-white-color);
+                }
+            }
+        }
+    }
+    &-2 {
+        & ul {
+            & li {
+                &.current, &:hover {
+                    & a {
+                        background-color: var(--mh-primary-color-3);
+                    }
                 }
             }
         }

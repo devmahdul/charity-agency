@@ -195,7 +195,6 @@ textarea{
 	@include mh-placeholder{
 		color: #85838b;
 	}
-
 	&:focus{
 		border-color: #fe4e15;
 		box-shadow: 0 0 0 4px rgba(254, 78, 21, 0.1);

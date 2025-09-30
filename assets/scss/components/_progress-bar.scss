@@ -41,6 +41,12 @@
             height: 100%;
             background-color: var(--mh-theme-color);
             border-radius: 6px;
+            &-donation {
+               background-color: var(--mh-secondary-color);
+            }
+        }
+        &-donation {
+            background-color: rgba(18, 16, 24, 0.08);
         }
     }
     &-2 {
@@ -96,6 +102,23 @@
                 z-index: -1;
             }
         }
+    }
+}
+
+.mh-donation-progress {
+    &-text {
+        letter-spacing: inherit;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &-numb {
+        font-family: var(--mh-heading-font);
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--mh-secondary-color);
+        display: block;
+        text-align: right;
+        line-height: 1;
     }
 }
 

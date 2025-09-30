@@ -1535,6 +1535,12 @@ img {
   background-color: var(--mh-theme-color);
   border-radius: 6px;
 }
+.mh-progress-bar-fill-donation {
+  background-color: var(--mh-secondary-color);
+}
+.mh-progress-bar-donation {
+  background-color: rgba(18, 16, 24, 0.08);
+}
 .mh-progress-2 label {
   font-size: 16px;
   font-weight: 600;
@@ -1586,6 +1592,21 @@ img {
   background-color: var(--mh-primary-color-3);
   border-radius: 50%;
   z-index: -1;
+}
+
+.mh-donation-progress-text {
+  letter-spacing: inherit;
+  font-size: 20px;
+  font-weight: 400;
+}
+.mh-donation-progress-numb {
+  font-family: var(--mh-heading-font);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--mh-secondary-color);
+  display: block;
+  text-align: right;
+  line-height: 1;
 }
 
 .mh-nav-tabs {
@@ -1745,6 +1766,41 @@ img {
 }
 .mh-pagination-2 ul li.current a, .mh-pagination-2 ul li:hover a {
   background-color: var(--mh-primary-color-3);
+}
+
+.mh-radio-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mh-radio-wrap label {
+  margin-right: 10px;
+}
+
+/* Custom radio button */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.custom-radio:checked {
+  border-color: var(--mh-secondary-color);
+}
+.custom-radio:checked:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--mh-secondary-color);
+  border-radius: 50%;
 }
 
 .mh-header-transparent {
@@ -3053,6 +3109,192 @@ img {
   background-color: rgba(18, 16, 24, 0.06);
 }
 
+.mh-causes-details {
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 20px;
+}
+.mh-causes-tabs {
+  border-bottom: 1px solid rgba(18, 16, 24, 0.1);
+  padding: 0 80px;
+}
+.mh-causes-tabs button {
+  font-size: 20px;
+  color: #000;
+  font-family: var(--mh-heading-font-2);
+  font-weight: 700;
+  margin-right: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid transparent;
+}
+.mh-causes-tabs button.active {
+  border-color: var(--mh-secondary-color);
+}
+.mh-causes-tab-content h3 {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  font-family: var(--mh-heading-font-2);
+}
+.mh-causes-tab-content p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.mh-causes-tab-content-main {
+  padding: 0 80px;
+  padding-bottom: 60px;
+}
+.mh-causes-tab-content iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: block;
+}
+.mh-causes-quote {
+  display: flex;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.mh-causes-quote svg {
+  flex: 0 0 auto;
+  margin-right: 28px;
+}
+.mh-causes-quote p {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--mh-primary-color-3);
+  font-family: var(--mh-heading-font-2);
+}
+
+.mh-donation-notice {
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+.mh-donation-notice span {
+  background-color: rgba(255, 207, 78, 0.4);
+  display: inline-block;
+  border-radius: 16px;
+  font-weight: 600;
+  color: var(--mh-heading-color);
+  line-height: 1;
+  padding: 5px 7px;
+  margin-right: 8px;
+}
+.mh-donation-notice span i {
+  font-size: 13px;
+  font-weight: 600;
+}
+.mh-donation-form-wrap {
+  padding: 0 80px 30px;
+}
+.mh-donation-form-title {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid rgba(18, 16, 24, 0.08);
+  padding: 35px 80px 18px;
+}
+.mh-donation-form-input {
+  position: relative;
+}
+.mh-donation-form-input input {
+  font-size: 20px;
+  padding: 0 55px;
+  width: 200px;
+  font-weight: 400;
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 12px;
+  background-color: var(--mh-white-color);
+}
+.mh-donation-form-input input::-webkit-input-placeholder {
+  color: #85838b;
+  font-size: 20px;
+}
+.mh-donation-form-input input:-moz-placeholder {
+  color: #85838b;
+  font-size: 20px;
+}
+.mh-donation-form-input input::-moz-placeholder {
+  color: #85838b;
+  font-size: 20px;
+}
+.mh-donation-form-input input:-ms-input-placeholder {
+  color: #85838b;
+  font-size: 20px;
+}
+.mh-donation-form-input label {
+  width: 34px;
+  height: 34px;
+  background-color: var(--mh-secondary-color);
+  border-radius: 50%;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mh-white-color);
+  position: absolute;
+  z-index: 55;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mh-donation-form-button {
+  border-bottom: 1px solid rgba(18, 16, 24, 0.08);
+  padding-bottom: 25px;
+}
+.mh-donation-form-button button {
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  padding: 9px 26px;
+  margin-right: 3px;
+  color: var(--mh-heading-color);
+}
+.mh-donation-form-button button:hover {
+  border-color: var(--mh-heading-color);
+}
+.mh-donation-form-radio {
+  border-bottom: 1px solid rgba(18, 16, 24, 0.08);
+  padding-bottom: 30px;
+}
+.mh-donation-form-radio-title {
+  font-size: 18px;
+  font-family: var(--mh-body-font);
+  letter-spacing: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.mh-donation-form-amount {
+  font-size: 16px;
+  color: #3c3a40;
+  font-weight: 400;
+}
+.mh-donation-form-amount span {
+  color: var(--mh-secondary-color);
+  font-weight: 600;
+}
+.mh-donation-form-social a {
+  width: 40px;
+  height: 40px;
+  background-color: #F6F6F6;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.mh-donation-form-social-text {
+  margin-left: 55px;
+}
+.mh-donation-form-social-text span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #85838B;
+  text-align: left;
+}
+
 .mh-author-shape img {
   border: 2px solid var(--mh-white-color);
   box-shadow: 0 10px 30px 0 rgba(18, 16, 24, 0.2);
@@ -4100,6 +4342,9 @@ img {
   letter-spacing: -0.04em;
   font-size: 16px;
   border-bottom: 2px solid var(--mh-primary-color);
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
   margin-bottom: 15px;
 }
 .mh-contact-form input::-webkit-input-placeholder {
@@ -4113,6 +4358,12 @@ img {
 }
 .mh-contact-form input:-ms-input-placeholder {
   color: rgba(7, 61, 48, 0.7);
+}
+.mh-contact-form input:focus {
+  border: 0;
+  border-bottom: 2px solid var(--mh-primary-color);
+  background-color: transparent;
+  box-shadow: none;
 }
 .mh-contact-form button {
   margin-top: 5px;

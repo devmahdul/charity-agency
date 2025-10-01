@@ -3973,6 +3973,8 @@ img {
 }
 .mh-sm-team-thumb img {
   border-radius: 50%;
+  width: 180px;
+  height: 180px;
 }
 .mh-sm-team-content span {
   font-size: 16px;
@@ -5240,6 +5242,9 @@ img {
 }
 .fns-45 {
   font-size: 45px;
+}
+.fns-46 {
+  font-size: 46px;
 }
 .fns-50 {
   font-size: 50px;

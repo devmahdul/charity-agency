@@ -1737,6 +1737,7 @@ img {
   line-height: 26px;
   color: #454449;
   padding: 0 30px 30px;
+  padding-right: 80px;
 }
 
 .mh-pagination ul {
@@ -3294,6 +3295,15 @@ img {
   color: #85838B;
   text-align: left;
 }
+.mh-donation-offline p {
+  font-size: 16px;
+}
+.mh-donation-offline ol {
+  padding-left: 20px;
+}
+.mh-donation-offline ol li {
+  font-size: 16px;
+}
 
 .mh-author-shape img {
   border: 2px solid var(--mh-white-color);
@@ -3996,6 +4006,89 @@ img {
   width: 18px;
   height: 18px;
   display: inline-block;
+}
+
+.mh-team-details-bg {
+  padding: 80px 78px 40px;
+  border-radius: 20px;
+}
+.mh-team-details-shape {
+  bottom: 25px;
+  right: 25px;
+  mix-blend-mode: exclusion;
+  opacity: 0.1;
+}
+.mh-team-details-thumb img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+}
+.mh-team-details-title {
+  font-size: 40px;
+  font-family: var(--mh-heading-font-2);
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+}
+.mh-team-details-sub-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mh-secondary-color);
+  margin-bottom: 10px;
+  display: block;
+}
+.mh-team-details p {
+  font-size: 16px;
+}
+.mh-team-details ul {
+  list-style: none;
+  margin-top: 30px;
+}
+.mh-team-details ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.mh-team-details ul li span {
+  color: var(--mh-heading-color);
+  font-weight: 500;
+  min-width: 150px;
+  display: inline-block;
+}
+.mh-team-details-social a {
+  box-shadow: 0 1px 3px 0 rgba(22, 18, 5, 0.08);
+  background-color: var(--mh-white-color);
+}
+.mh-team-details-social a svg {
+  width: 18px;
+  height: 18px;
+}
+.mh-team-details-text h3 {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  font-family: var(--mh-heading-font-2);
+}
+.mh-team-details-text p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #454449;
+}
+.mh-team-details-img img {
+  border-radius: 20px;
+}
+.mh-team-details-skills-title {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.mh-team-details-skills label {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: var(--mh-heading-font);
+}
+.mh-team-details-skills .mh-progress-2-bar {
+  height: 8px;
+}
+.mh-team-details-skills .mh-progress-2-bar-fill {
+  background-color: var(--mh-secondary-color);
 }
 
 .mh-step {

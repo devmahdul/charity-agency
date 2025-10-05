@@ -81,7 +81,7 @@ $(function(){
 
     // video popup
     $('.popup-video').magnificPopup({
-        type: 'iframe'
+        type: 'iframe',
         // other options
     });
 
@@ -173,6 +173,15 @@ $(function(){
           1200: {
             slidesPerView: 3,
           },
+      },
+    });
+
+    // blog gallery slider
+    var swiper = new Swiper(".mhblog-gallery-active", {
+      slidesPerView: 1,
+      navigation: {
+        prevEl: ".mh-gallery-arrow-prev",
+        nextEl: ".mh-gallery-arrow-next",
       },
     });
 

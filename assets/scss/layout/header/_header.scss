@@ -150,10 +150,12 @@
     &-toggle {
         font-size: 34px;
         color: var(--mh-primary-color-2);
+        border-radius: 5px;
         &-2 {
             background-color: var(--mh-white-color);
             padding: 7px 14px;
             font-size: 22px;
+            border-radius: 5px;
         }
     }
 }

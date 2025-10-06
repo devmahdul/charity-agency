@@ -181,6 +181,9 @@
     border-radius: 20px;
     padding: 45px 30px 40px;
     @include mh-transition();
+    @media #{$lg} {
+        padding: 35px 18px 30px;
+    }
     &:hover {
         border: 1px solid #f45927;
         box-shadow: 0 1px 2px 0 rgba(146, 40, 5, 0.16);
@@ -210,6 +213,11 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            color: #5A5860;
+            &:hover {
+                background-color: var(--mh-secondary-color);
+                color: var(--mh-white-color);
+            }
             & svg {
                 width: 18px;
                 height: 18px;
@@ -315,3 +323,50 @@
     } 
    } 
 }
+
+.mh-team-join {
+    @media #{$xl} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media #{$lg,$md} {
+        padding: 60px 0;
+        padding-left: 40px;
+    }
+    @media #{$xs} {
+        padding: 50px 0;
+    }
+    @media #{$sm} {
+        padding-left: 10px;
+    }
+    &-area[data-bg-img] {
+        @media #{$md,$xs} {
+            background-image: none !important;
+        }
+    }
+    & .mh-section-title {
+        @media #{$xs} {
+            font-size: 36px;
+        }
+        @media #{$sm} {
+            font-size: 40px;
+        }
+        & br {
+            @media #{$lg,$xs} {
+                display: none;
+            }
+        }
+    }
+    &-img {
+        & img {
+            @media #{$md,$xs} {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+
+  
+

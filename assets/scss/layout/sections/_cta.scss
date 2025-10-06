@@ -51,7 +51,7 @@
     }
     &-border-radious {
         border-radius: 20px 0 0 20px;
-        @media #{$md,$xs} {
+        @media #{$md,$xs,$xl,$lg} {
             border-radius: 0;
         }
     }
@@ -122,7 +122,7 @@
     }
     &-border-radious {
         border-radius: 0 20px 20px 0;
-        @media #{$md,$xs} {
+        @media #{$md,$xs,$xl,$lg} {
             border-radius: 0;
         }
     }

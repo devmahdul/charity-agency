@@ -24,6 +24,12 @@
         font-size: 84px;
         letter-spacing: -0.02em;
         color: var(--mh-white-color);
+        @media #{$lg,$md} {
+            font-size: 60px;
+        }
+        @media #{$xs} {
+            font-size: 45px;
+        }
     }
     &-list {
         & span {

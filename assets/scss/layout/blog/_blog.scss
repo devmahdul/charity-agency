@@ -269,7 +269,7 @@
 .mh-blog {
     border: 1px solid rgba(18, 16, 24, 0.1);
     border-radius: 20px;
-    margin: 0 -30px 40px;
+    margin-bottom: 40px;
     &-thumb {
         position: relative;
         & img {
@@ -388,7 +388,7 @@
         }
     }
     &-sidebar {
-        margin-left: 45px;
+        // margin-left: 45px;
         max-width: 384px;
     }
     &-details-list {
@@ -405,9 +405,6 @@
         }
     }
     &-navigation {
-        &-content {
-            margin: 70px -30px 0;
-        }
         &-wrap {
             display: flex;
             align-items: center;
@@ -432,6 +429,98 @@
                 line-height: 24px;
                 margin-top: 5px;
             }
+        }
+    }
+    &-tag {
+        &-social {
+            border-top: 1px solid rgba(18, 16, 24, 0.1);
+            border-bottom: 1px solid rgba(18, 16, 24, 0.1);
+            padding-top: 35px;
+        }
+        &-title {
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        & a {
+            background-color: #f6f6f6;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1;
+            padding: 8px 17px;
+            margin-bottom: 6px;
+            border-radius: 12px;
+        }
+    }
+    &-social {
+        & a {
+            width: 40px;
+            height: 40px;
+            background-color: #F6F6F6;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &-comments {
+        &-title {
+            font-size: 36px;
+            letter-spacing: -0.02em;
+        }
+        &-main {
+            & ul {
+                list-style: none;
+            }
+        }
+        &-list {
+            display: flex;
+            gap: 30px;
+        }
+        &-thumb {
+            flex: 0 0 auto;
+            & img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+        }
+        &-author {
+            &-title {
+                font-size: 18px;
+                letter-spacing: -0.02em;
+            }
+        }
+        &-date {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        &-content {
+            & p {
+                font-size: 16px;
+                color: #454449;
+            }
+        }
+        &-btn {
+            & a {
+                color: var(--mh-secondary-color);
+                font-size: 13px;
+                font-weight: 600;
+                border: 1px solid rgba(18, 16, 24, 0.1);
+                line-height: 1;
+                display: inline-block;
+                padding: 11px 20px;
+                border-radius: 40px;
+                & i {
+                    margin-left: 5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        &-children {
+            margin-left: 100px;
         }
     }
 }

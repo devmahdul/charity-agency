@@ -139,11 +139,17 @@
                 top: 60px;
                 left: -120px;
                 border-radius: 20px;
+                @media #{$xl} {
+                    top: 20px;
+                }
             }
             &-03 {
                 bottom: 50px;
                 left: -147px;
                 border-radius: 20px;
+                @media #{$xl} {
+                    bottom: 25px;
+                }
             }
         }
     }

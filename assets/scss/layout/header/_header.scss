@@ -165,6 +165,12 @@
         @media #{$lg,$md,$xs} {
             padding: 10px 30px;
         }
+        @media #{$xs} {
+            padding: 10px;
+        }
+        @media #{$sm} {
+            padding: 10px 30px;
+        }
     }
     &-row {
         display: flex;

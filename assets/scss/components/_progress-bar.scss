@@ -110,6 +110,9 @@
         letter-spacing: inherit;
         font-size: 20px;
         font-weight: 400;
+        @media #{$xs} {
+            font-size: 16px;
+        }
     }
     &-numb {
         font-family: var(--mh-heading-font);
@@ -119,6 +122,9 @@
         display: block;
         text-align: right;
         line-height: 1;
+        @media #{$xs} {
+            font-size: 16px;
+        }
     }
 }
 

@@ -6,6 +6,10 @@
     padding: 60px;
     padding-bottom: 45px;
     margin-left: 50px;
+    @media #{$md,$xs} {
+        margin-left: 0;
+        padding: 30px 30px 20px;
+    }
     &-label {
         font-size: 14px;
         font-weight: 500;
@@ -76,10 +80,16 @@
     &-info {
         border-right: 1px solid rgba(18, 16, 24, 0.08);
         padding: 20px 50px;
+        @media #{$xs} {
+            border-right: 0;
+        }
         &-wrap {
             & .col-xl-4:nth-child(1) {
                 & .mh-contact-info {
                     border-left: 1px solid rgba(18, 16, 24, 0.08);
+                    @media #{$xs} {
+                        border-left: 0;
+                    }
                 }
             }
         }

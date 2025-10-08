@@ -8,6 +8,9 @@
     &-2 {
         padding: 50px 40px;
         border-radius: 20px;
+        @media #{$sm} {
+            padding: 30px;
+        }
     }
     &-margin {
         margin-top: -150px;

@@ -3,6 +3,10 @@
 
 .mh-radio-wrap {
     display: flex;
+    flex-wrap: wrap;
+}
+.mh-radio-check {
+    display: flex;
     align-items: center;
     gap: 8px;
     & label {

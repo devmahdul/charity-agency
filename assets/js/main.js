@@ -1,8 +1,26 @@
 $(function(){
     "use strict";
 
+    // Back To Top
+    var $backToTop = $(".mh-back-to-top");
+    $backToTop.hide();
+
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > 100 ) {
+        $backToTop.fadeIn();
+        $backToTop.addClass(".mh-back-to-top-open");
+      } else {
+        $backToTop.fadeOut();
+        $backToTop.removeClass(".mh-back-to-top-open");
+      }
+    });
+
+    $backToTop.on('click', function(e) {
+      $("html, body").animate({scrollTop: 0}, 500);
+    });
+
+
     // Mobile Menu Custo
-  
     var mhMenuHTML = $('.mh-mobile-menu-active > ul').clone();
     var mhOffcanvasMenu = $('.mh-offcanvas-menu > nav');
 

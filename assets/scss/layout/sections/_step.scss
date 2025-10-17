@@ -84,6 +84,25 @@
             color: var(--mh-off-white-color-2);
             & a {
                 font-weight: 600;
+                position: relative;
+                &:hover {
+                    &:before {
+                         transform: translateX(-50%) scale(1);
+                         transform-origin: bottom left;
+                    }
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--mh-theme-color);
+                    bottom: -1px;
+                    left: 50%;
+                    transform: translateX(-50%) scale(0);
+                    transform-origin: bottom right;
+                    transition: transform .3s ease-out;
+                }
             }
             &-2 {
                 font-size: 18px;

@@ -26,6 +26,9 @@
         font-size: 26px;
         font-weight: 600;
         margin-bottom: 16px;
+        &:hover {
+            color: var(--mh-secondary-color);
+        }
     }
     &__meta {
         & span {
@@ -127,6 +130,9 @@
         font-size: 26px;
         letter-spacing: -0.02em;
         line-height: 1.3;
+        &:hover {
+            color: var(--mh-secondary-color);
+        }
         @media #{$xl,$lg} {
             font-size: 24px;
         }
@@ -141,8 +147,14 @@
             font-weight: 600;
             text-transform: uppercase;
             display: inline-block;
+            &:hover {
+                & svg {
+                    transform: translateX(3px);
+                }
+            }
             & svg {
                 margin-left: 5px;
+                transition: .3s;
             }
         }
     }

@@ -51,6 +51,19 @@
             }
         }
     }
+    &-btn {
+        & .mh-btn-full-red {
+            &:hover {
+                background-color: var(--mh-theme-color);
+                color: #222;
+            }
+        }
+        & .mh-btn-full-green {
+            &:hover {
+                background-color: var(--mh-secondary-color);
+            }
+        }
+    }
     &-list {
         & ul {
             list-style: none;

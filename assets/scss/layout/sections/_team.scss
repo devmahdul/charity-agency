@@ -30,6 +30,9 @@
         letter-spacing: -0.02em;
         color: var(--mh-white-color);
         margin-bottom: 5px;
+        &:hover {
+            color: var(--mh-theme-color);
+        }
     }
     &__social {
         right: 20px;
@@ -46,7 +49,16 @@
             line-height: 36px;
             text-align: center;
             margin-bottom: 3px;
+            color: #2B2B2D;
             transition: .3s;
+            &:hover {
+                background-color: var(--mh-theme-color);
+                color: var(--mh-primary-color);
+            }
+            & svg {
+                width: 14px;
+                height: 16px;
+            }
         }
     }
     &:hover .mhteam__social {
@@ -109,6 +121,11 @@
             line-height: 42px;
             text-align: center;
             border-radius: 50%;
+            color: #2B2B2D;
+            &:hover {
+                background-color: var(--mh-secondary-color);
+                color: var(--mh-white-color);
+            }
         }
     }
     &__title {
@@ -117,6 +134,9 @@
         letter-spacing: -0.02em;
         color: var(--mh-primary-color);
         margin-bottom: 8px;
+        &:hover {
+            color: var(--mh-secondary-color);
+        }
     }
     &__content {
         & span {
@@ -185,7 +205,7 @@
         padding: 35px 18px 30px;
     }
     &:hover {
-        border: 1px solid #f45927;
+        border: 1px solid var(--mh-secondary-color);
         box-shadow: 0 1px 2px 0 rgba(146, 40, 5, 0.16);
     }
     &-thumb {
@@ -203,6 +223,9 @@
     &-title {
         letter-spacing: -0.02em;
         font-size: 20px;
+        &:hover {
+            color: var(--mh-secondary-color);
+        }
     }
     &-social {
         & a {

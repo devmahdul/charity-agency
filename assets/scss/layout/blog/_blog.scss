@@ -29,6 +29,9 @@
         font-size: 26px;
         font-weight: 600;
         line-height: 1.2;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -113,6 +116,9 @@
         color: var(--mh-primary-color);
         line-height: 1.2;
         margin-bottom: 16px;
+        &:hover {
+            color: var(--mh-secondary-color);
+        }
     }
 }
 
@@ -202,6 +208,9 @@
                 line-height: 26px;
                 font-weight: 600;
                 letter-spacing: inherit;
+                &:hover {
+                    color: var(--mh-secondary-color);
+                }
                 @media #{$lg,$xs,$md} {
                     font-size: 16px;
                     line-height: 22px;
@@ -221,6 +230,9 @@
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 15px;
+                    &:hover {
+                        color: var(--mh-secondary-color);
+                    }
                 }
             }
         }
@@ -237,6 +249,10 @@
         padding: 8px 17px;
         margin-bottom: 6px;
         border-radius: 12px;
+        &:hover {
+            background-color: var(--mh-secondary-color);
+            color: var(--mh-white-color);
+        }
     }
 }
 
@@ -276,6 +292,11 @@
     }
     &-btn {
         padding: 15px;
+        & .mh-btn-2 {
+            &:hover {
+                background-color: var(--mh-secondary-color);
+            }
+        }
     }
 }
 
@@ -402,6 +423,11 @@
         font-size: 40px;
         letter-spacing: -0.03em;
         line-height: 1.1;
+        &:not(.mh-blog-title-2) {
+            &:hover {
+                color: var(--mh-secondary-color);
+            }
+        }
         @media #{$lg,$md,$xs} {
             letter-spacing: inherit;
         }
@@ -448,12 +474,18 @@
         }
     }
     &-navigation {
-        &-wrap {
+        & a {
             display: flex;
             align-items: center;
             gap: 20px;
+            &:hover {
+                & i {
+                    background-color: var(--mh-secondary-color);
+                    color: var(--mh-white-color);
+                }
+            }
         }
-        & a {
+        & i {
             width: 50px;
             height: 50px;
             background-color: #f6f6f6;
@@ -461,6 +493,7 @@
             border-radius: 50%;
             line-height: 50px;
             text-align: center;
+            @include mh-transition();
         }
         &-text {
             & span {
@@ -503,6 +536,10 @@
             padding: 8px 17px;
             margin-bottom: 6px;
             border-radius: 12px;
+            &:hover {
+                background-color: var(--mh-secondary-color);
+                color: var(--mh-white-color);
+            }
         }
     }
     &-social {
@@ -510,10 +547,15 @@
             width: 40px;
             height: 40px;
             background-color: #F6F6F6;
+            color: #5A5860;
             border-radius: 50%;
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            &:hover {
+                background-color: var(--mh-secondary-color);
+                color: var(--mh-white-color);
+            }
         }
     }
     &-comments {
@@ -564,6 +606,11 @@
                 display: inline-block;
                 padding: 11px 20px;
                 border-radius: 40px;
+                &:hover {
+                    background-color: var(--mh-secondary-color);
+                    border-color: var(--mh-secondary-color);
+                    color: var(--mh-white-color);
+                }
                 & i {
                     margin-left: 5px;
                     transform: rotate(-45deg);
@@ -593,10 +640,15 @@
     width: 50px;
     height: 50px;
     background-color: var(--mh-white-color);
+    color: var(--mh-primary-color);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    &:hover {
+        background-color: var(--mh-secondary-color);
+        color: var(--mh-white-color);
+    }
     @media #{$xs} {
         width: 40px;
         height: 40px;

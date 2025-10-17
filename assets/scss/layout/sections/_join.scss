@@ -17,6 +17,12 @@
             letter-spacing: -0.02em;
             color: var(--mh-primary-color);
         }
+        & .mh-btn {
+            &:hover {
+                background-color: var(--mh-primary-color);
+                color: var(--mh-white-color);
+            }
+        }
         
     }
     &-shape {

@@ -198,6 +198,9 @@
             margin-bottom: 0;
             & a {
                 font-weight: 600;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

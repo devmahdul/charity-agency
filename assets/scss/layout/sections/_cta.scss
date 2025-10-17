@@ -116,6 +116,19 @@
             font-family: var(--mh-heading-font);
         }
     }
+    &-btn {
+        width: 100%;
+        padding: 21px 50px;
+        border-radius: 0 0 12px 0;
+        font-size: 18px;
+        &:hover {
+            background-color: var(--mh-white-color);
+            color: var(--mh-primary-color);
+        }
+        & svg {
+            margin-right: 5px;
+        }
+    }
     &-bottom {
         padding: 0 14px 14px;
         margin-top: 34px;

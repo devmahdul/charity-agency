@@ -87,6 +87,9 @@
         z-index: 44;
         color: var(--mh-white-color);
         font-size: 12px;
+        &:hover {
+            background-color: var(--mh-secondary-color);
+        }
         &-next {
             left: auto;
             right: 64px;

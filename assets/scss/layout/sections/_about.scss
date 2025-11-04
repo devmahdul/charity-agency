@@ -1,5 +1,7 @@
 @use '../../utils' as *;
 
+/* 3.7 About */
+
 .mh-about {
     &-wrapper {
         @media #{$xl} {

@@ -1,3 +1,7 @@
+@use '../utils/' as *;
+
+/* 1.2 Default Spacing */
+
 // margin
 @for $i from 1 through 20 {
     .mt-#{$i * 5} {

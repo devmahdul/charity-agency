@@ -206,6 +206,7 @@ $(function(){
     // hero slider
     var swiper = new Swiper(".mh-slider-active", {
       slidesPerView: 1,
+      effect: "fade",
       navigation: {
           prevEl: ".mh-slider-arrow-prev",
           nextEl: ".mh-slider-arrow-next",
@@ -260,6 +261,23 @@ $(function(){
         },
       }
     });
-    
+
+    // wow js
+    if($('.wow').length) {
+      function wowAnimation() {
+          let wow = new WOW({
+              boxClass: 'wow',
+              animateClass: 'animated',
+              offset: 0,
+              mobile: false,
+              live: true
+          });
+          wow.init();
+      }
+
+      $(window).on('load', function () {
+        wowAnimation();
+      })
+    }
 
 })(jQuery);

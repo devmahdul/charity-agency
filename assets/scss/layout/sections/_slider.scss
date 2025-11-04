@@ -1,5 +1,7 @@
 @use '../../utils' as *;
 
+/* 3.4 Slider */
+
 .mh-slider {
     &-item {
         padding-top: 200px;
@@ -95,4 +97,38 @@
             right: 64px;
         }
     }
+}
+
+
+.mh-slider-subtitle {
+	transform: translateY(20px);
+    opacity: 0;
+    transition: .5s;
+}
+.mh-slider-title {
+	transform: translateY(30px);
+    opacity: 0;
+    transition: .5s;
+}
+.mh-slider-btn {
+	transform: translateY(30px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.swiper-slide-active .mh-slider-subtitle {
+    transition-delay: .6s;
+}
+.swiper-slide-active .mh-slider-title {
+    transition-delay: .9s;
+}
+.swiper-slide-active .mh-slider-btn {
+    transition-delay: 1.3s;
+}
+
+.swiper-slide-active .mh-slider-subtitle,
+.swiper-slide-active .mh-slider-title,
+.swiper-slide-active .mh-slider-btn {
+    opacity: 1;
+    transform: translateY(0);
 }

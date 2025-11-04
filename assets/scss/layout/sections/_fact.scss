@@ -1,5 +1,7 @@
 @use '../../utils' as *;
 
+/* 3.11 Fact */
+
 .mh-fact {
     &-item {
         @media #{$lg} {

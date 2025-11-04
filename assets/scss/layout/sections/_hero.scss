@@ -1,5 +1,7 @@
 @use '../../utils' as *;
 
+/* 3.5 Hero */
+
 .mh-hero {
     @media #{$md,$xs} {
         position: relative;

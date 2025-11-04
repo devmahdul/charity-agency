@@ -1,5 +1,7 @@
 @use '../utils/' as *;
 
+/* 2.3 Progress Bar */
+
 .mh-progress {
     & span {
         background-color: var(--mh-theme-color);

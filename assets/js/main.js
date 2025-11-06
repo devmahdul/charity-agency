@@ -1,11 +1,25 @@
 $(function(){
     "use strict";
 
+    var windowOn = $(window); 
+    
+    // sticky js 
+    windowOn.on('scroll', function () {
+      var scroll = windowOn.scrollTop();
+      if (scroll < 100) {
+        $("#mh-header-sticky").removeClass("header-sticky");
+      } else {
+        $("#mh-header-sticky").addClass("header-sticky");
+      }
+    });
+
     // Back To Top
     var $backToTop = $(".mh-back-to-top");
     $backToTop.hide();
 
-    $(window).on('scroll', function() {
+    var windowOn = $(window);
+
+    windowOn.on('scroll', function() {
       if ($(this).scrollTop() > 100 ) {
         $backToTop.fadeIn();
         $backToTop.addClass(".mh-back-to-top-open");
@@ -263,21 +277,23 @@ $(function(){
     });
 
     // wow js
-    if($('.wow').length) {
+    if($('.wow').length) { 
       function wowAnimation() {
-          let wow = new WOW({
-              boxClass: 'wow',
-              animateClass: 'animated',
-              offset: 0,
-              mobile: false,
-              live: true
-          });
-          wow.init();
-      }
+            var wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: false,
+                live: true
+            });
+            wow.init();
+        }
+      
+      var windowOn = $(window);
 
-      $(window).on('load', function () {
+      windowOn.on('load', function () {
         wowAnimation();
-      })
-    }
+      }); 
+  }
 
 })(jQuery);

@@ -201,12 +201,12 @@
         }
         &-shape {
             border-style: solid;
-            border-width: 120px 0 0 85px;
+            border-width: 120px 0 0 84px;
             border-color: transparent transparent transparent var(--mh-primary-color-3);
             transform: rotate(0deg);
             position: absolute;
             top: 0;
-            right: -85px;
+            right: -84px;
             @media #{$xl} {
                 border-width: 120px 0 0 35px;
                 right: -34px;
@@ -321,6 +321,39 @@
             right: 0;
             margin: auto;
             top: -18px;
+        }
+    }
+}
+
+.header-sticky {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    animation: mhFadeInDown 0.7s ease-in-out 0s normal none 1 running;
+    -webkit-animation: mhFadeInDown 0.7s ease-in-out 0s normal none 1 running;
+    z-index: 99;
+    & .mh-header-bg {
+        box-shadow: 0 20px 30px rgba(167, 167, 167, 0.1);
+    }
+    &.mh-header-full-area {
+        top: 0;
+        box-shadow: 0 20px 30px rgba(167, 167, 167, 0.1);
+    }
+    & .mh-header-full-top  {
+        display: none;
+    }
+    & .mh-header-full-logo-shape {
+        border-width: 71px 0 0 75px;
+        right: -74px;
+    }
+    & .mh-header-full-logo-line {
+        height: calc(100% + 29px);
+        transform: rotate(-47deg);
+    }
+    & .mh-header-full-menu {
+        @media #{$xl} {
+            padding-left: 80px;
         }
     }
 }

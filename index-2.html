@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
     <!-- Header Section Start -->
     <header>
-        <div class="mh-header-area mh-header-transparent">
+        <div id="mh-header-sticky" class="mh-header-area mh-header-transparent">
             <div class="mh-header-container">
                 <div class="mh-header-bg" data-bg-color="#F8F3E7">
                     <div class="mh-header-row">
@@ -77,7 +78,7 @@
                                     </a>
                                 </div>
                                 <div class="mh-header-btn ml-25">
-                                    <a class="mh-btn" href="">Donate Now</a>
+                                    <a class="mh-btn" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                             <div class="mh-header-toggle-wrapper d-xl-none ml-20">
@@ -96,7 +97,7 @@
         <div class="mh-offcanvas-header">
             <div class="mh-offcanvas mb-50">
                 <div class="mh-offcanvas-logo">
-                    <a href="#"><img src="assets/img/logo/logo-2.png" alt=""></a>
+                    <a href="index.html"><img src="assets/img/logo/logo-2.png" alt=""></a>
                 </div>
                 <div class="mh-offcanvas-close">
                     <button class="mh-offcanvas-close-button"><i class="fal fa-times"></i></button>
@@ -114,16 +115,16 @@
                 <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit.</p>
             </div>
             <div class="mh-offcanvas-gallery mb-50">
-                <a href="#"><img src="assets/img/gallery/project-tab-1.jpg" alt=""></a>
-                <a href="#"><img src="assets/img/gallery/project-tab-2.jpg" alt=""></a>
-                <a href="#"><img src="assets/img/gallery/project-tab-3.jpg" alt=""></a>
-                <a href="#"><img src="assets/img/gallery/project-tab-4.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/gallery/gallery-01.jpg"><img src="assets/img/gallery/gallery-01.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/gallery/gallery-02.jpg"><img src="assets/img/gallery/gallery-02.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/gallery/gallery-03.jpg"><img src="assets/img/gallery/gallery-03.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/gallery/gallery-04.jpg"><img src="assets/img/gallery/gallery-04.jpg" alt=""></a>
             </div>
             <div class="mh-offcanvas-info mb-40">
                 <h4 class="mh-offcanvas-sm-title">Information</h4>
                 <span><a href="tel:+42077001007">+ 4 20 7700 1007</a></span>
                 <span><a href="mailto:hello@exdos.com">hello@exdos.com</a></span>
-                <span><a href="">Avenue de Roma 158b, Lisboa</a></span>
+                <span><a href="#">Avenue de Roma 158b, Lisboa</a></span>
             </div>
             <div class="mh-offcanvas-social">
                 <h4 class="mh-offcanvas-social-title">Follow Us</h4>
@@ -178,12 +179,12 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-9 col-md-12">
                         <div class="mh-hero mh-hero-2 mb-30">
-                            <span class="mh-hero-sub-title">Need Help...</span>
-                            <h1 class="mh-hero-title mh-hero-title-2 mb-40">Being life saver for someone</h1>
-                            <p>Fight for right cause for save the world.</p>
-                            <div class="mh-hero-btn-2 mt-55">
-                                <a class="mh-btn mb-10 mr-10" href="#">Donate Now</a>
-                                <a class="mh-btn mh-btn-white" href="#">Grt Involved</a>
+                            <span class="mh-hero-sub-title d-block wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".3s">Need Help...</span>
+                            <h1 class="mh-hero-title mh-hero-title-2 mb-40 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".6s">Being life saver for someone</h1>
+                            <p class="wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".8s">Fight for right cause for save the world.</p>
+                            <div class="mh-hero-btn-2 mt-55 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay="1s">
+                                <a class="mh-btn mb-10 mr-10" href="donate.html">Donate Now</a>
+                                <a class="mh-btn mh-btn-white" href="contact.html">Grt Involved</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +202,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-3 col-sm-6">
-                        <div class="mhservice mhservice-2 border-0 mb-30" data-bg-color="#D5F4F0">
+                        <div class="mhservice mhservice-2 border-0 mb-30 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".3s" data-bg-color="#D5F4F0">
                             <div class="mhservice__icon mb-50">
                                 <img src="assets/img/services/service-2-01.png" alt="">
                             </div>
@@ -215,7 +216,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6">
-                        <div class="mhservice mhservice-2 border-0 mb-30" data-bg-color="#F8F3E7">
+                        <div class="mhservice mhservice-2 border-0 mb-30 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".5s" data-bg-color="#F8F3E7">
                             <div class="mhservice__icon mb-50">
                                 <img src="assets/img/services/service-2-02.png" alt="">
                             </div>
@@ -229,7 +230,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6">
-                        <div class="mhservice mhservice-2 border-0 mb-30" data-bg-color="#EBDAF3">
+                        <div class="mhservice mhservice-2 border-0 mb-30 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".7s" data-bg-color="#EBDAF3">
                             <div class="mhservice__icon mb-50">
                                 <img src="assets/img/services/service-2-03.png" alt="">
                             </div>
@@ -243,7 +244,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-sm-6">
-                        <div class="mhservice mhservice-2 border-0 mb-30" data-bg-color="#E6FABC">
+                        <div class="mhservice mhservice-2 border-0 mb-30 wow mhFadeInUp" data-wow-duration=".6s" data-wow-delay=".9s" data-bg-color="#E6FABC">
                             <div class="mhservice__icon mb-50">
                                 <img src="assets/img/services/service-2-04.png" alt="">
                             </div>
@@ -259,7 +260,7 @@
                 </div>
                 <div class="mh-bottom-quote d-flex align-items-center justify-content-center mt-10">
                     <img src="assets/img/about/hand-love.png" alt="">
-                    <p>Total raising money in this year > <a href="#"><span>$4,50,000</span><svg width="114" height="4" viewBox="0 0 114 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p>Total raising money in this year > <a href="causes-details.html"><span>$4,50,000</span><svg width="114" height="4" viewBox="0 0 114 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.85089 2.40021C18.1116 3.45887 34.2976 1.93382 50.3689 1.68864C71.1009 1.3713 91.9685 2.15169 112.738 2.12155" stroke="#FFCF4E" stroke-width="2" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg></a> </p>
                 </div>
@@ -275,7 +276,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-8">
-                        <div class="mh-about-img mb-30 p-relative z-index-2">
+                        <div class="mh-about-img mb-30 p-relative z-index-2 wow mhFadeInLeft"  data-wow-duration=".6s" data-wow-delay=".3s">
                             <img class="w-100" src="assets/img/about/about-2-img.png" alt="">
                             <div class="mh-about-number p-absolute">
                                 <img src="assets/img/about/about-number.png" alt="">
@@ -287,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1">
+                    <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1 wow mhFadeInRight"  data-wow-duration=".6s" data-wow-delay=".3s">
                         <div class="mh-about-wrapper mt-70 pl-30">
                             <div class="mh-section-info mb-35">
                                 <span class="mh-section-sub-title mh-sf mb-20">About Us</span>
@@ -309,7 +310,7 @@
                             chain management, warehousing, distribution, transportation
                             and customs services.</p>
                              <div class="mh-about-btn mt-45">
-                                <a class="mh-btn" href="#">More About</a>
+                                <a class="mh-btn" href="about.html">More About</a>
                             </div>
                         </div>
                     </div>
@@ -363,32 +364,32 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__content">
-                                    <h3 class="mhcharity__title mb-10"><a href="#">Family Planing</a></h3>
+                                    <h3 class="mhcharity__title mb-10"><a href="causes-details.html">Family Planing</a></h3>
                                     <p>Lorem ipsum dolor sit consectetur
                                     adipiscing elit.</p>
                                     <div class="mh-progress mh-progress-2 mb-15">
-                                        <label>65%</label>
+                                        <label>20%</label>
                                         <div class="mh-progress-bar mh-progress-2-bar">
-                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 65%"></div>
+                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 20%"></div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="mhcharity__amount">
                                                 <label>Goals:</label>
-                                                <span>$35,000</span>
+                                                <span>$7,000</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="mhcharity__amount text-end">
                                                 <label>Raised:</label>
-                                                <span>$55,000</span>
+                                                <span>$35,000</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mhcharity__button mt-35">
-                                    <a class="mh-btn-full" href="#">Donate Now</a>
+                                    <a class="mh-btn-full" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                         </div>
@@ -401,32 +402,32 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__content">
-                                    <h3 class="mhcharity__title mb-10"><a href="#">Taking Care of Children</a></h3>
+                                    <h3 class="mhcharity__title mb-10"><a href="causes-details.html">Taking Care of Children</a></h3>
                                     <p>Lorem ipsum dolor sit consectetur
                                     adipiscing elit.</p>
                                     <div class="mh-progress mh-progress-2 mb-15">
-                                        <label>65%</label>
+                                        <label>80%</label>
                                         <div class="mh-progress-bar mh-progress-2-bar">
-                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 65%"></div>
+                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 80%"></div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="mhcharity__amount">
                                                 <label>Goals:</label>
-                                                <span>$35,000</span>
+                                                <span>$28,000</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="mhcharity__amount text-end">
                                                 <label>Raised:</label>
-                                                <span>$55,000</span>
+                                                <span>$35,000</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mhcharity__button mt-35">
-                                    <a class="mh-btn-full" href="#">Donate Now</a>
+                                    <a class="mh-btn-full" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                         </div>
@@ -439,20 +440,20 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__content">
-                                    <h3 class="mhcharity__title mb-10"><a href="#">Local Communities</a></h3>
+                                    <h3 class="mhcharity__title mb-10"><a href="causes-details.html">Local Communities</a></h3>
                                     <p>Lorem ipsum dolor sit consectetur
                                     adipiscing elit.</p>
                                     <div class="mh-progress mh-progress-2 mb-15">
-                                        <label>65%</label>
+                                        <label>60%</label>
                                         <div class="mh-progress-bar mh-progress-2-bar">
-                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 65%"></div>
+                                            <div class="mh-progress-bar-fill mh-progress-2-bar-fill" style="width: 60%"></div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="mhcharity__amount">
                                                 <label>Goals:</label>
-                                                <span>$35,000</span>
+                                                <span>$33,000</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -464,7 +465,7 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__button mt-35">
-                                    <a class="mh-btn-full" href="#">Donate Now</a>
+                                    <a class="mh-btn-full" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                         </div>
@@ -477,7 +478,7 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__content">
-                                    <h3 class="mhcharity__title mb-10"><a href="#">Family Planing</a></h3>
+                                    <h3 class="mhcharity__title mb-10"><a href="causes-details.html">Family Planing</a></h3>
                                     <p>Lorem ipsum dolor sit consectetur
                                     adipiscing elit.</p>
                                     <div class="mh-progress mh-progress-2 mb-15">
@@ -502,7 +503,7 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__button mt-35">
-                                    <a class="mh-btn-full" href="#">Donate Now</a>
+                                    <a class="mh-btn-full" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                         </div>
@@ -515,7 +516,7 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__content">
-                                    <h3 class="mhcharity__title mb-10"><a href="#">Taking Care of Children</a></h3>
+                                    <h3 class="mhcharity__title mb-10"><a href="causes-details.html">Taking Care of Children</a></h3>
                                     <p>Lorem ipsum dolor sit consectetur
                                     adipiscing elit.</p>
                                     <div class="mh-progress mh-progress-2 mb-15">
@@ -540,14 +541,14 @@
                                     </div>
                                 </div>
                                 <div class="mhcharity__button mt-35">
-                                    <a class="mh-btn-full" href="#">Donate Now</a>
+                                    <a class="mh-btn-full" href="donate.html">Donate Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="mhcharity__textdown  text-center">
-                    <p class="mh-hf">All our efforts are made possible only because <br> of your support. <a href="#">See all Causes</a> </p>
+                    <p class="mh-hf">All our efforts are made possible only because <br> of your support. <a href="causes-details.html">See all Causes</a> </p>
                 </div> 
             </div>
         </section>
@@ -571,7 +572,7 @@
                 </div>
                 <div class="mh-step-row d-flex flex-wrap justify-content-between">
                     <div class="mh-step-col">
-                        <div class="mh-step text-center mb-30">
+                        <div class="mh-step text-center mb-30 wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".3s">
                             <div class="mh-step-arrow d-none d-lg-block">
                                 <img src="assets/img/shape/arrow-top.png" alt="">
                             </div>
@@ -585,7 +586,7 @@
                         </div>
                     </div>
                     <div class="mh-step-col">
-                        <div class="mh-step text-center mb-30">
+                        <div class="mh-step text-center mb-30 wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".5s">
                             <div class="mh-step-arrow d-none d-lg-block">
                                 <img src="assets/img/shape/arrow-down.png" alt="">
                             </div>
@@ -599,7 +600,7 @@
                         </div>
                     </div>
                     <div class="mh-step-col">
-                        <div class="mh-step text-center mb-30">
+                        <div class="mh-step text-center mb-30 wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".7s">
                             <div class="mh-step-arrow d-none d-lg-block">
                                 <img src="assets/img/shape/arrow-top.png" alt="">
                             </div>
@@ -613,7 +614,7 @@
                         </div>
                     </div>
                     <div class="mh-step-col">
-                        <div class="mh-step text-center mb-30">
+                        <div class="mh-step text-center mb-30 wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".9s">
                             <div class="mh-step-number mh-hf mb-35">
                                 04
                             </div>
@@ -625,7 +626,7 @@
                     </div>
                 </div>
                 <div class="mh-step-down text-center mt-50">
-                    <p class="mh-step-down-text">Fight for right cause for save the world. <a href="#">Donate Now</a> </p>
+                    <p class="mh-step-down-text">Fight for right cause for save the world. <a href="donate.html">Donate Now</a> </p>
                 </div>
             </div>
         </section>
@@ -656,7 +657,7 @@
                     </div>
                     <div class="mh-join-down">
                         <h4 class="mb-25">People already joining</h4>
-                        <a class="mh-btn" href="#">Yes, I went to join Community</a>
+                        <a class="mh-btn" href="donate.html">Yes, I went to join Community</a>
                     </div>
                 </div>
             </div>
@@ -721,7 +722,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="mhteamcard mb-30">
                             <div class="mhteamcard__img p-relative mb-25">
-                                <a href="#"><img class="w-100" src="assets/img/team/team-2-01.jpg" alt=""></a>
+                                <a href="team-details.html"><img class="w-100" src="assets/img/team/team-2-01.jpg" alt=""></a>
                                 <img class="mhteamcard__shape p-absolute" src="assets/img/shape/team-card-shape.png" alt="#">
                                 <div class="mhteamcard__social">
                                     <a href="#">
@@ -752,7 +753,7 @@
                                 </div>
                             </div>
                             <div class="mhteamcard__content">
-                                <h3 class="mhteamcard__title"><a href="#">Emily Brown</a></h3>
+                                <h3 class="mhteamcard__title"><a href="team-details.html">Michel Connor</a></h3>
                                 <span>Volunteers</span>
                             </div>
                         </div>
@@ -760,7 +761,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="mhteamcard mb-30">
                             <div class="mhteamcard__img p-relative mb-25">
-                                <a href="#"><img class="w-100" src="assets/img/team/team-2-02.jpg" alt=""></a>
+                                <a href="team-details.html"><img class="w-100" src="assets/img/team/team-2-02.jpg" alt=""></a>
                                 <img class="mhteamcard__shape p-absolute" src="assets/img/shape/team-card-shape.png" alt="#">
                                 <div class="mhteamcard__social">
                                     <a href="#">
@@ -791,7 +792,7 @@
                                 </div>
                             </div>
                             <div class="mhteamcard__content">
-                                <h3 class="mhteamcard__title"><a href="#">Emily Brown</a></h3>
+                                <h3 class="mhteamcard__title"><a href="team-details.html">Jessica Lauren</a></h3>
                                 <span>Volunteers</span>
                             </div>
                         </div>
@@ -799,7 +800,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="mhteamcard mb-30">
                             <div class="mhteamcard__img p-relative mb-25">
-                                <a href="#"><img class="w-100" src="assets/img/team/team-2-03.jpg" alt=""></a>
+                                <a href="team-details.html"><img class="w-100" src="assets/img/team/team-2-03.jpg" alt=""></a>
                                 <img class="mhteamcard__shape p-absolute" src="assets/img/shape/team-card-shape.png" alt="#">
                                 <div class="mhteamcard__social">
                                     <a href="#">
@@ -830,7 +831,7 @@
                                 </div>
                             </div>
                             <div class="mhteamcard__content">
-                                <h3 class="mhteamcard__title"><a href="#">Emily Brown</a></h3>
+                                <h3 class="mhteamcard__title"><a href="team-details.html">Emily Brown</a></h3>
                                 <span>Volunteers</span>
                             </div>
                         </div>
@@ -845,7 +846,7 @@
                                 <p>Centuries but also the leap
                                 electtype setting, remaining</p>
                                 <div class="mhteam-banner-btn mt-35">
-                                    <a class="mh-btn mh-btn-primary" href="#">Join us Today</a>
+                                    <a class="mh-btn mh-btn-primary" href="contact.html">Join us Today</a>
                                 </div>
                             </div>
                         </div>
@@ -853,7 +854,7 @@
                 </div>
                 <div class="mh-bottom-quote mh-bottom-quote-team d-flex align-items-center">
                     <img src="assets/img/about/hand-love.png" alt="">
-                    <p class="fnw-300">Why not join us? <a href="#">Become Volunteer
+                    <p class="fnw-300">Why not join us? <a href="donate.html">Become Volunteer
                     </a></p>
                 </div>
             </div>
@@ -866,7 +867,7 @@
                 <div class="mh-section-info mb-40">
                     <span class="mh-section-sub-title mh-sf">Our achievements</span>
                 </div>
-                <div class="mh-fact d-flex justify-content-between flex-wrap">
+                <div class="mh-fact d-flex justify-content-between flex-wrap wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".3s">
                     <div class="mh-fact-item mh-fact-border pl-25 mb-30">
                         <h4 class="fns-80 fnw-400"><span>64</span>k</h4>
                         <p>Children in poverty with food and medicine.</p>
@@ -891,7 +892,7 @@
         <!-- Contact Section Start -->
         <section class="mh-contact-area fix mh-contact-area-margin">
             <div class="container">
-                <div class="mh-theme-bg br-20">
+                <div class="mh-theme-bg br-20 wow mhFadeInUp"  data-wow-duration=".6s" data-wow-delay=".3s">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-12">
                             <div class="mh-contact-img d-flex align-items-center mr-35" data-bg-img="assets/img/contact/contact-img.png">
@@ -916,7 +917,7 @@
                                     </form>
                                 </div>
                                 <div class="mh-contact-text text-center mt-25">
-                                    <p>Been here before? <a href="#">Been here before?</a></p>
+                                    <p>Been here before? <a href="contact.html">Been here before?</a></p>
                                 </div>
                             </div>
                         </div>
@@ -932,7 +933,7 @@
                 <img class="mh-blog-shape-top p-absolute" src="assets/img/shape/charity-top-shape.png" alt="">
             </div>
             <div class="container">
-                <div class="mh-section-info text-center mb-55">
+                <div class="mh-section-info mb-55">
                     <span class="mh-section-sub-title mh-sf mb-20">Our latest Updates</span>
                     <h2 class="mh-section-title" data-color="#073D30">Our latest News
                     </h2>
@@ -953,14 +954,13 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="mhlpblog__content">
                                             <div class="mhlpblog__cat mb-20">
-                                                <a href="#">Education</a>
+                                                <a href="blog-details.html">Education</a>
                                             </div>
-                                            <h3 class="mhlpblog__title"><a href="#">We providing urgent
-                                            aid after cyclone.</a></h3>
+                                            <h3 class="mhlpblog__title"><a href="blog-details.html">Here are 10 health benefits of apples.</a></h3>
                                             <p>Having a home based business
                                             is a wonderful asset to your...</p>
                                             <div class="mhlpblog__btn mt-25">
-                                                <a class="mh-btn-sm mh-btn-sm-theme" href="#">Read More</a>
+                                                <a class="mh-btn-sm mh-btn-sm-theme" href="blog-details.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -981,14 +981,13 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="mhlpblog__content">
                                             <div class="mhlpblog__cat mb-20">
-                                                <a href="#">Education</a>
+                                                <a href="blog-details.html">Education</a>
                                             </div>
-                                            <h3 class="mhlpblog__title"><a href="#">We providing urgent
-                                            aid after cyclone.</a></h3>
+                                            <h3 class="mhlpblog__title"><a href="blog-details.html">Directly support Coaching fundraisers.</a></h3>
                                             <p>Having a home based business
                                             is a wonderful asset to your...</p>
                                             <div class="mhlpblog__btn mt-25">
-                                                <a class="mh-btn-sm mh-btn-sm-theme" href="#">Read More</a>
+                                                <a class="mh-btn-sm mh-btn-sm-theme" href="blog-details.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1009,14 +1008,14 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="mhlpblog__content">
                                             <div class="mhlpblog__cat mb-20">
-                                                <a href="#">Education</a>
+                                                <a href="blog-details.html">Education</a>
                                             </div>
-                                            <h3 class="mhlpblog__title"><a href="#">We providing urgent
+                                            <h3 class="mhlpblog__title"><a href="blog-details.html">We providing urgent
                                             aid after cyclone.</a></h3>
                                             <p>Having a home based business
                                             is a wonderful asset to your...</p>
                                             <div class="mhlpblog__btn mt-25">
-                                                <a class="mh-btn-sm mh-btn-sm-theme" href="#">Read More</a>
+                                                <a class="mh-btn-sm mh-btn-sm-theme" href="blog-details.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1037,14 +1036,13 @@
                                     <div class="col-md-6 col-sm-6">
                                         <div class="mhlpblog__content">
                                             <div class="mhlpblog__cat mb-20">
-                                                <a href="#">Education</a>
+                                                <a href="blog-details.html">Education</a>
                                             </div>
-                                            <h3 class="mhlpblog__title"><a href="#">We providing urgent
-                                            aid after cyclone.</a></h3>
+                                            <h3 class="mhlpblog__title"><a href="blog-details.html">Rapid Response to Cyclone-Hit Areas.</a></h3>
                                             <p>Having a home based business
                                             is a wonderful asset to your...</p>
                                             <div class="mhlpblog__btn mt-25">
-                                                <a class="mh-btn-sm mh-btn-sm-theme" href="#">Read More</a>
+                                                <a class="mh-btn-sm mh-btn-sm-theme" href="blog-details.html">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1070,14 +1068,14 @@
                 <img class="mh-footer-shape-05 p-absolute" src="assets/img/shape/footer-shape-4.png" alt="">
             </div>
             <div class="mh-footer-top-content text-center">
-                <h3 class="mh-footer-top-title">We need your small help. <a href="#">Get involved!</a></h3>
+                <h3 class="mh-footer-top-title">We need your small help. <a href="contact.html">Get involved!</a></h3>
             </div>
             <div class="container">
                 <div class="row pt-100">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                         <div class="mh-footer-widget mb-40 mh-footer-2-col-1">
                             <div class="mh-footer-logo mb-30">
-                                <a href="#">
+                                <a href="index.html">
                                     <img src="assets/img/logo/footer-logo.png" alt="">
                                 </a>
                             </div>
@@ -1115,11 +1113,11 @@
                         <div class="mh-footer-widget mb-40 mh-footer-2-col-2">
                             <h4 class="mh-footer-title mh-white fns-30 fnw-600 mb-35">Solution</h4>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Learn about us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">Learn about us</a></li>
+                                <li><a href="contact.html">Careers</a></li>
                                 <li><a href="#">Features</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1179,6 +1177,7 @@
     <script src="assets/js/magnific-popup.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

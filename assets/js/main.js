@@ -285,9 +285,9 @@
             var wow = new WOW({
                 boxClass: 'wow',
                 animateClass: 'animated',
-                offset: 0,
+                offset: 100,
                 mobile: true,
-                live: true
+                live: true,
             });
             wow.init();
         }

@@ -219,7 +219,7 @@
             position: absolute;
             top: -2px;
             right: -5px;
-            z-index: 222222222;
+            z-index: 22222;
             transform: rotate(-35deg);
             transform-origin: top right;
             @media #{$xl} {
@@ -344,7 +344,7 @@
         display: none;
     }
     & .mh-header-full-logo-shape {
-        border-width: 71px 0 0 75px;
+        border-width: 70.5px 0 0 75px;
         right: -74px;
     }
     & .mh-header-full-logo-line {

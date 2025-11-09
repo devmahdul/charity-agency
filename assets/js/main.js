@@ -1,7 +1,12 @@
-$(function(){
+(function($){
     "use strict";
 
-    var windowOn = $(window); 
+    var windowOn = $(window);
+    
+    // Loader
+    windowOn.on('load', function() {
+      $("#loading").fadeOut(500);
+    })
     
     // sticky js 
     windowOn.on('scroll', function () {
@@ -17,15 +22,13 @@ $(function(){
     var $backToTop = $(".mh-back-to-top");
     $backToTop.hide();
 
-    var windowOn = $(window);
-
     windowOn.on('scroll', function() {
       if ($(this).scrollTop() > 100 ) {
         $backToTop.fadeIn();
-        $backToTop.addClass(".mh-back-to-top-open");
+        $backToTop.addClass("mh-back-to-top-open");
       } else {
         $backToTop.fadeOut();
-        $backToTop.removeClass(".mh-back-to-top-open");
+        $backToTop.removeClass("mh-back-to-top-open");
       }
     });
 
@@ -295,5 +298,11 @@ $(function(){
         wowAnimation();
       }); 
   }
+
+  // counterUp
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000,
+});
 
 })(jQuery);

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wehelp - Charity & Fundraising HTML Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -12,6 +13,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Preloader Start -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two" style="left: 20px;"></div>
+                <div class="object" id="object_three" style="left: 40px;"></div>
+                <div class="object" id="object_four" style="left: 60px;"></div>
+                <div class="object" id="object_five" style="left: 80px;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
     
     <!-- Header Section Start -->
     <header>
@@ -794,19 +809,19 @@
                 </div>
                 <div class="mh-fact d-flex justify-content-between flex-wrap">
                     <div class="mh-fact-item mh-fact-border pl-25 mb-30">
-                        <h4 class="fns-80 fnw-400"><span>64</span>k</h4>
+                        <h4 class="fns-80 fnw-400"><span class="counter">64</span>k</h4>
                         <p>Children in poverty with food and medicine.</p>
                     </div>
                     <div class="mh-fact-item mh-fact-border pl-25 mb-30">
-                        <h4 class="fns-80 fnw-400"><span>56</span></h4>
+                        <h4 class="fns-80 fnw-400"><span class="counter">56</span></h4>
                         <p>Different campaigns around the world.</p>
                     </div>
                     <div class="mh-fact-item mh-fact-border pl-25 mb-30">
-                        <h4 class="fns-80 fnw-400"><span>128</span></h4>
+                        <h4 class="fns-80 fnw-400"><span class="counter">128</span></h4>
                         <p>Volunteers who work extremely hard every week</p>
                     </div>
                     <div class="mh-fact-item mh-fact-border pl-25 mb-30">
-                        <h4 class="fns-80 fnw-400">$<span>1.2</span>M</h4>
+                        <h4 class="fns-80 fnw-400">$<span class="counter">1.2</span>M</h4>
                         <p>Raised to help the children in need.</p>
                     </div>
                 </div>
@@ -1545,6 +1560,8 @@
     <script src="assets/js/magnific-popup.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

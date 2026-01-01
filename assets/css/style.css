@@ -2449,6 +2449,7 @@ img {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  z-index: 10;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199.99px), only screen and (min-width: 768px) and (max-width: 991.99px), (max-width: 767px) {
   .mh-mega-menu {

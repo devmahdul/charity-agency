@@ -343,6 +343,7 @@
     opacity: 0;
     visibility: hidden;
     @include mh-transition();
+    z-index: 10;
     @media #{$lg,$md,$xs} {
         display: none;
         width: auto;
